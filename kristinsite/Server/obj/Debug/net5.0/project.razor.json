@@ -3944,6 +3944,39 @@
         }
       },
       {
+        "HashCode": -1507380931,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.AboutMe",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AboutMe"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.AboutMe"
+        }
+      },
+      {
+        "HashCode": -1872670033,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.AboutMe",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.AboutMe"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.AboutMe",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1774654944,
         "Kind": "Components.Component",
         "Name": "kristinsite.Client.Pages.Counter",
