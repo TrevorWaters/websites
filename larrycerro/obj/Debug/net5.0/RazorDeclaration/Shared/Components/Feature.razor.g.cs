@@ -13,77 +13,77 @@ namespace larrycerro.Shared.Components
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 1 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 2 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 3 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 4 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 5 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 6 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 7 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 8 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 9 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using larrycerro;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 10 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using larrycerro.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "/home/tee/Documents/websites/larrycerro/_Imports.razor"
+#line 11 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\_Imports.razor"
 using larrycerro.Shared.Components;
 
 #line default
