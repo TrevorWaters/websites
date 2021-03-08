@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GnraBybTEUCIbSVAbDdoLQgjZI1+ZA0DkvcknvrUFMrjke/CvzTcoDQLkiMnGQNueFcvb0HLwmzkUEP7Dc02TQ==",
+  "dgSpecHash": "sS/PbCn2Qo2gWoD1AWE5w9YNHL8Iz5vdCyityF6yOocJlf27NOduZp6XWD/IYCrpqenBcQs8m7DH7HldUHn9vg==",
   "success": true,
   "projectFilePath": "/home/tee/Documents/websites/kristinsite/Client/kristinsite.Client.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "/home/tee/.nuget/packages/microsoft.jsinterop.webassembly/5.0.2/microsoft.jsinterop.webassembly.5.0.2.nupkg.sha512",
     "/home/tee/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/home/tee/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
-    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.2/microsoft.netcore.app.runtime.browser-wasm.5.0.2.nupkg.sha512"
+    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.3/microsoft.netcore.app.runtime.browser-wasm.5.0.3.nupkg.sha512"
   ],
   "logs": []
 }

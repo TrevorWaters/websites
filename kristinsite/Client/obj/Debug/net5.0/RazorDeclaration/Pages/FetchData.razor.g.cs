@@ -82,14 +82,6 @@ using kristinsite.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/home/tee/Documents/websites/kristinsite/Client/Pages/FetchData.razor"
-using kristinsite.Shared;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
     public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -97,21 +89,6 @@ using kristinsite.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 38 "/home/tee/Documents/websites/kristinsite/Client/Pages/FetchData.razor"
-       
-    private WeatherForecast[] forecasts;
-
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-    }
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

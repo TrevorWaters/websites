@@ -90,19 +90,6 @@ using kristinsite.Client.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 9 "/home/tee/Documents/websites/kristinsite/Client/Pages/Counter.razor"
-       
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

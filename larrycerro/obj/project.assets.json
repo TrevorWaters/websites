@@ -1144,26 +1144,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\taw11\\.nuget\\packages\\": {}
+    "/home/tee/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\larrycerro.csproj",
+      "projectUniqueName": "/home/tee/Documents/websites/larrycerro/larrycerro.csproj",
       "projectName": "larrycerro",
-      "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\larrycerro.csproj",
-      "packagesPath": "C:\\Users\\taw11\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\obj\\",
+      "projectPath": "/home/tee/Documents/websites/larrycerro/larrycerro.csproj",
+      "packagesPath": "/home/tee/.nuget/packages/",
+      "outputPath": "/home/tee/Documents/websites/larrycerro/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\taw11\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/tee/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1209,7 +1207,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.2, 5.0.2]"
+            "version": "[5.0.3, 5.0.3]"
           }
         ],
         "frameworkReferences": {
@@ -1217,7 +1215,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
