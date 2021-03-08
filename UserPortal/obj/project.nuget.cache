@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "RP21ETZziZ4cpzqwr9ap5OjrnavfGAMUFmS5AUGYOsF2l58ozC6zPdoby57+ZZm7Kfc3mi5p725+RAq/I3LmLw==",
+  "success": true,
+  "projectFilePath": "/home/tee/Documents/websites/UserPortal/UserPortal.csproj",
+  "expectedPackageFiles": [
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.authorization/5.0.0-rc.2.20475.17/microsoft.aspnetcore.authorization.5.0.0-rc.2.20475.17.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.components/5.0.0-rc.2.20475.17/microsoft.aspnetcore.components.5.0.0-rc.2.20475.17.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.components.analyzers/5.0.0-rc.2.20475.17/microsoft.aspnetcore.components.analyzers.5.0.0-rc.2.20475.17.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.components.web.extensions/5.0.0-preview9.20513.1/microsoft.aspnetcore.components.web.extensions.5.0.0-preview9.20513.1.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.metadata/5.0.0-rc.2.20475.17/microsoft.aspnetcore.metadata.5.0.0-rc.2.20475.17.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0-rc.2.20475.5/microsoft.extensions.dependencyinjection.abstractions.5.0.0-rc.2.20475.5.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0-rc.2.20475.5/microsoft.extensions.logging.abstractions.5.0.0-rc.2.20475.5.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.extensions.options/5.0.0-rc.2.20475.5/microsoft.extensions.options.5.0.0-rc.2.20475.5.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.extensions.primitives/5.0.0-rc.2.20475.5/microsoft.extensions.primitives.5.0.0-rc.2.20475.5.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.jsinterop/5.0.0-rc.2.20475.17/microsoft.jsinterop.5.0.0-rc.2.20475.17.nupkg.sha512"
+  ],
+  "logs": []
+}

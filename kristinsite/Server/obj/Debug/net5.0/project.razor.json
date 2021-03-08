@@ -3911,89 +3911,35 @@
         }
       },
       {
-        "HashCode": -574677479,
+        "HashCode": -1565378872,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductModal",
+        "Name": "kristinsite.Client.Shared.NavMenu",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProductModal"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ProductId",
-            "TypeName": "System.Int64",
-            "Metadata": {
-              "Common.PropertyName": "ProductId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Show",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Show"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ModalClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
-            "Metadata": {
-              "Common.PropertyName": "ModalClosed",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductModal"
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -1919306177,
+        "HashCode": 208484433,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductModal",
+        "Name": "kristinsite.Client.Shared.NavMenu",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Shared.ProductModal"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ProductId",
-            "TypeName": "System.Int64",
-            "Metadata": {
-              "Common.PropertyName": "ProductId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Show",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Show"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ModalClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
-            "Metadata": {
-              "Common.PropertyName": "ModalClosed",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "kristinsite.Client.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductModal",
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4127,35 +4073,89 @@
         }
       },
       {
-        "HashCode": -1565378872,
+        "HashCode": -574677479,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
+        "Name": "kristinsite.Client.Shared.ProductModal",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "ProductModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal"
         }
       },
       {
-        "HashCode": 208484433,
+        "HashCode": -1919306177,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
+        "Name": "kristinsite.Client.Shared.ProductModal",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Shared.NavMenu"
+            "TagName": "kristinsite.Client.Shared.ProductModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
