@@ -173,35 +173,369 @@
         }
       },
       {
-        "HashCode": 591215998,
+        "HashCode": -1513544481,
         "Kind": "Components.Component",
-        "Name": "larrycerro.Shared.Components.Feature",
+        "Name": "larrycerro.Shared.Components.Card",
         "AssemblyName": "larrycerro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Feature"
+            "TagName": "Card"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Icon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Icon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Link",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Link"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Multiple",
+            "TypeName": "System.Boolean?",
+            "Metadata": {
+              "Common.PropertyName": "Multiple"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Width",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Width"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
+            "Metadata": {
+              "Common.PropertyName": "OnClickCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InputAttributes",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "Metadata": {
+              "Common.PropertyName": "InputAttributes"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "larrycerro.Shared.Components.Feature"
+          "Common.TypeName": "larrycerro.Shared.Components.Card"
         }
       },
       {
-        "HashCode": 1740691011,
+        "HashCode": -395552938,
         "Kind": "Components.Component",
-        "Name": "larrycerro.Shared.Components.Feature",
+        "Name": "larrycerro.Shared.Components.Card",
         "AssemblyName": "larrycerro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "larrycerro.Shared.Components.Feature"
+            "TagName": "larrycerro.Shared.Components.Card"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Icon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Icon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Link",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Link"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Multiple",
+            "TypeName": "System.Boolean?",
+            "Metadata": {
+              "Common.PropertyName": "Multiple"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Width",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Width"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
+            "Metadata": {
+              "Common.PropertyName": "OnClickCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InputAttributes",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "Metadata": {
+              "Common.PropertyName": "InputAttributes"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "larrycerro.Shared.Components.Feature",
+          "Common.TypeName": "larrycerro.Shared.Components.Card",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -686777283,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Feature_copy",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Feature_copy"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Icon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Icon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Link",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Link"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.Feature_copy"
+        }
+      },
+      {
+        "HashCode": -1767157770,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Feature_copy",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "larrycerro.Shared.Components.Feature_copy"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Icon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Icon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Link",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Link"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.Feature_copy",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1461659540,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Landing",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Landing"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.Landing"
+        }
+      },
+      {
+        "HashCode": -395521888,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Landing",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "larrycerro.Shared.Components.Landing"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.Landing",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -568867327,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.VerticalFeature",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VerticalFeature"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.VerticalFeature"
+        }
+      },
+      {
+        "HashCode": 1478389703,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.VerticalFeature",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "larrycerro.Shared.Components.VerticalFeature"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Components.VerticalFeature",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 479414851,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Footer",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Footer"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Footer"
+        }
+      },
+      {
+        "HashCode": -1860784073,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Footer",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "larrycerro.Shared.Footer"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Shared.Footer",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13006,8 +13340,18 @@
   "RootNamespace": "larrycerro",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Feature copy.razor",
+      "TargetPath": "Shared\\Components\\Feature copy.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\VerticalFeature.razor",
+      "TargetPath": "Shared\\Components\\VerticalFeature.razor",
       "FileKind": "component"
     },
     {
@@ -13016,13 +13360,28 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Footer.razor",
+      "TargetPath": "Shared\\Footer.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Landing.razor",
+      "TargetPath": "Shared\\Components\\Landing.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Card.razor",
+      "TargetPath": "Shared\\Components\\Card.razor",
       "FileKind": "component"
     },
     {
@@ -13043,11 +13402,6 @@
     {
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\About.razor",
       "TargetPath": "Pages\\About.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Feature.razor",
-      "TargetPath": "Shared\\Components\\Feature.razor",
       "FileKind": "component"
     }
   ],
