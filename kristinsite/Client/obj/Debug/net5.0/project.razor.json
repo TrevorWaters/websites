@@ -8,167 +8,68 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1774654944,
+        "HashCode": -1565378872,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Counter",
+        "Name": "kristinsite.Client.Shared.NavMenu",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Counter"
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -2111143538,
+        "HashCode": 208484433,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Counter",
+        "Name": "kristinsite.Client.Shared.NavMenu",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Pages.Counter"
+            "TagName": "kristinsite.Client.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Counter",
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1507380931,
+        "HashCode": 2098855400,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.AboutMe",
+        "Name": "kristinsite.Client.Shared.Footer",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AboutMe"
+            "TagName": "Footer"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.AboutMe"
+          "Common.TypeName": "kristinsite.Client.Shared.Footer"
         }
       },
       {
-        "HashCode": -1872670033,
+        "HashCode": -1356588880,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.AboutMe",
+        "Name": "kristinsite.Client.Shared.Footer",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Pages.AboutMe"
+            "TagName": "kristinsite.Client.Shared.Footer"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.AboutMe",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -123421857,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.FetchData",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1168931,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.FetchData",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2130764667,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Index",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -349330583,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Index",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1592775432,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Store",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Store"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Store"
-        }
-      },
-      {
-        "HashCode": 1719127005,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Pages.Store",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Pages.Store"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Pages.Store",
+          "Common.TypeName": "kristinsite.Client.Shared.Footer",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -269,121 +170,122 @@
         }
       },
       {
-        "HashCode": 2098855400,
+        "HashCode": -574677479,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.Footer",
+        "Name": "kristinsite.Client.Shared.ProductModal",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Footer"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.Footer"
-        }
-      },
-      {
-        "HashCode": -1356588880,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.Footer",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.Footer"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.Footer",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 807045945,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.SurveyPrompt",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
+            "TagName": "ProductModal"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.SurveyPrompt"
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal"
         }
       },
       {
-        "HashCode": -1510314892,
+        "HashCode": -1919306177,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.SurveyPrompt",
+        "Name": "kristinsite.Client.Shared.ProductModal",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Shared.SurveyPrompt"
+            "TagName": "kristinsite.Client.Shared.ProductModal"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.SurveyPrompt",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1565378872,
+        "HashCode": -236488140,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
+        "Name": "kristinsite.Client.Shared.ProductView",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "ProductView"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
+          "Common.TypeName": "kristinsite.Client.Shared.ProductView"
         }
       },
       {
-        "HashCode": 208484433,
+        "HashCode": -1068886227,
         "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
+        "Name": "kristinsite.Client.Shared.ProductView",
         "AssemblyName": "kristinsite.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "kristinsite.Client.Shared.NavMenu"
+            "TagName": "kristinsite.Client.Shared.ProductView"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductView",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -417,6 +319,171 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "kristinsite.Client.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1507380931,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.AboutMe",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AboutMe"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.AboutMe"
+        }
+      },
+      {
+        "HashCode": -1872670033,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.AboutMe",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.AboutMe"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.AboutMe",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1774654944,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Counter",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -2111143538,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Counter",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -123421857,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.FetchData",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 1168931,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.FetchData",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2130764667,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Index",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -349330583,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Index",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1592775432,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Store",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Store"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Store"
+        }
+      },
+      {
+        "HashCode": 1719127005,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Pages.Store",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Pages.Store"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Pages.Store",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13107,18 +13174,23 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/ProductView.razor",
+      "TargetPath": "Shared\\ProductView.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/Footer.razor",
-      "TargetPath": "Shared\\Footer.razor",
+      "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/ProductModal.razor",
+      "TargetPath": "Shared\\ProductModal.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FilePath": "/home/tee/Documents/websites/kristinsite/Client/Shared/Footer.razor",
+      "TargetPath": "Shared\\Footer.razor",
       "FileKind": "component"
     },
     {

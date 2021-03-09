@@ -82,6 +82,13 @@ using kristinsite.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "/home/tee/Documents/websites/kristinsite/Client/Pages/Store.razor"
+using kristinsite.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Store")]
     public partial class Store : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +97,33 @@ using kristinsite.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 136 "/home/tee/Documents/websites/kristinsite/Client/Pages/Store.razor"
+       
+    private Products[] products;
+    
+    private bool hideModal{ get; set; } = true;
+
+    private long ProductID { get; set; }
+    private void ShowModal(long id)
+    {
+        hideModal = false;
+        ProductID = id;
+    }
+    private void HideModal()
+    {
+        hideModal = true;
+        ProductID = 0;
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<Products[]>("Site");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
