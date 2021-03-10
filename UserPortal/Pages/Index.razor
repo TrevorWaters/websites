@@ -1,5 +1,7 @@
 @page "/"
-<Title value="Page-Title" />
+@inherits BaseComponent
+
+<Title value="User Portal Dashboard" />
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="flex flex-col">
   <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -18,7 +20,7 @@
                 Email
               </th>
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Role
+                Approved
               </th>
               <th scope="col" class="relative px-6 py-3">
                 <span class="sr-only">Edit</span>
@@ -26,48 +28,70 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Odd row -->
-            <tr class="bg-white">
+            @{var even = true;}
+            @foreach (var user in Users)
+            {
+            <tr class="@(even == true ? "bg-white" : "bg-gray-50")">
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                Jane Cooper
+                @($"{user.FirstName} {user.LastName}")
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                Regional Paradigm Technician
+                @user.JobTitle
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                jane.cooper@example.com
+                @user.EmailAddress
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                Admin
+                @user.IsApproved
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
               </td>
             </tr>
-
-            <!-- Even row -->
-            <tr class="bg-gray-50">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                Cody Fisher
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                Product Directives Officer
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                cody.fisher@example.com
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                Owner
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-              </td>
-            </tr>
-
-            <!-- More items... -->
+             even = !even;
+            }
           </tbody>
         </table>
       </div>
     </div>
   </div>
 </div>
+
+@code {
+    private List<UserViewModel> Users = new List<UserViewModel>();
+    private List<UserRolesViewModel> Roles = new List<UserRolesViewModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        InitDependencies();
+        await RefreshUsers();
+    }
+    private async Task RefreshUsers()
+    {
+        Users = await GetUsersAsync();
+    }
+    public UserViewModel NewUser { get; set; } = new UserViewModel();
+    private async Task AddNewUser()
+    {
+        await AddUserAsync(NewUser);
+        NewUser = new UserViewModel();
+        await RefreshUsers();
+    }
+    UserViewModel UpdateUser = new UserViewModel();
+    private void SetUserForUpdate(UserViewModel user)
+    {
+        UpdateUser = user;
+    }
+    private async Task UpdateUserData()
+    {
+        await UpdateUserAsync(UpdateUser);
+        await RefreshUsers();
+    }
+    private async Task DeleteUser(UserViewModel user)
+    {
+        await DeleteUserAsync(user);
+        await RefreshUsers();
+    } 
+
+
+}

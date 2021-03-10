@@ -4,15 +4,12 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      plugins: [
-        // ...
-        require('@tailwindcss/forms'),
-      ]
-    },
+
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require ('@tailwindcss/forms'),
+  ],
 }

@@ -9,7 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 using UserPortal.Data;
+using AutoMapper;
+using UserPortal.Extensions;
 
 namespace UserPortal
 {
@@ -28,7 +31,12 @@ namespace UserPortal
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+
+            services.AddDbContextFactory<UserPortalContext>(options =>
+            {
+                options.UseSqlite($"Data Source = Users.db");
+            });
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
