@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
@@ -14,3 +15,21 @@
     <Watch Include="wwwroot\index.html"/>
   </ItemGroup>
 </Project>
+=======
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.3" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+<ItemGroup>
+    <!-- extends watching group to include *.js files -->
+    <Watch Include="wwwroot\index.html"/>
+  </ItemGroup>
+</Project>
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc

@@ -99,6 +99,7 @@ using larrycerro.Shared.Components;
         #pragma warning restore 1998
 #nullable restore
 #line 9 "/home/tee/Documents/websites/larrycerro/Pages/Counter.razor"
+<<<<<<< HEAD
        
     private int currentCount = 0;
 
@@ -106,6 +107,15 @@ using larrycerro.Shared.Components;
     {
         currentCount++;
     }
+=======
+       
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden

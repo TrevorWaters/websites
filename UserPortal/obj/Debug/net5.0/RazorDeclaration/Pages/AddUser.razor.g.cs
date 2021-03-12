@@ -144,7 +144,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 295 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\UserPortal\Pages\AddUser.razor"
+#line 192 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\UserPortal\Pages\AddUser.razor"
        
   private UserViewModel User = new UserViewModel();
 

@@ -629,6 +629,7 @@
 /home/tee/Documents/websites/larrycerro/obj/Debug/net5.0/RazorDeclaration/Shared/Components/Feature.razor.g.cs
 /home/tee/Documents/websites/larrycerro/obj/Debug/net5.0/Razor/Shared/Components/Feature.razor.g.cs
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\bin\Debug\net5.0\wwwroot\_framework\blazor.boot.json
 C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\bin\Debug\net5.0\package.json
 C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\bin\Debug\net5.0\larrycerro.StaticWebAssets.xml
@@ -1272,6 +1273,8 @@ C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\obj\Debug\net5.0\
 C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\obj\Debug\net5.0\Razor\Shared\Components\Card.razor.g.cs
 C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\obj\Debug\net5.0\Razor\Shared\Components\Feature copy.razor.g.cs
 =======
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 C:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/larrycerro/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json
 C:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/larrycerro/bin/Debug/net5.0/package.json
 C:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/larrycerro/bin/Debug/net5.0/larrycerro.StaticWebAssets.xml
@@ -1910,4 +1913,7 @@ C:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/larrycerro/obj/Debug/net5.0/
 /home/tee/Documents/websites/larrycerro/obj/Debug/net5.0/Razor/Pages/About.razor.g.cs
 /home/tee/Documents/websites/larrycerro/obj/Debug/net5.0/scopedcss/Pages/About.razor.rz.scp.css
 /home/tee/Documents/websites/larrycerro/obj/Debug/net5.0/scopedcss/projectbundle/larrycerro.bundle.scp.css
+<<<<<<< HEAD
 >>>>>>> 19a51be03a32245cc5e5498ec9ab97bb5de4842f
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc

@@ -173,13 +173,20 @@
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": -1513544481,
         "Kind": "Components.Component",
         "Name": "larrycerro.Shared.Components.Card",
+=======
+        "HashCode": 591215998,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Feature",
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
         "AssemblyName": "larrycerro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
+<<<<<<< HEAD
             "TagName": "Card"
           }
         ],
@@ -482,10 +489,14 @@
         "TagMatchingRules": [
           {
             "TagName": "VerticalFeature"
+=======
+            "TagName": "Feature"
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
+<<<<<<< HEAD
           "Common.TypeName": "larrycerro.Shared.Components.VerticalFeature"
         }
       },
@@ -493,15 +504,29 @@
         "HashCode": 1478389703,
         "Kind": "Components.Component",
         "Name": "larrycerro.Shared.Components.VerticalFeature",
+=======
+          "Common.TypeName": "larrycerro.Shared.Components.Feature"
+        }
+      },
+      {
+        "HashCode": 1740691011,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Shared.Components.Feature",
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
         "AssemblyName": "larrycerro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
+<<<<<<< HEAD
             "TagName": "larrycerro.Shared.Components.VerticalFeature"
+=======
+            "TagName": "larrycerro.Shared.Components.Feature"
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
+<<<<<<< HEAD
           "Common.TypeName": "larrycerro.Shared.Components.VerticalFeature",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -536,6 +561,9 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "larrycerro.Shared.Footer",
+=======
+          "Common.TypeName": "larrycerro.Shared.Components.Feature",
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13340,51 +13368,66 @@
   "RootNamespace": "larrycerro",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Feature copy.razor",
       "TargetPath": "Shared\\Components\\Feature copy.razor",
       "FileKind": "component"
     },
     {
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\VerticalFeature.razor",
       "TargetPath": "Shared\\Components\\VerticalFeature.razor",
       "FileKind": "component"
     },
     {
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Footer.razor",
       "TargetPath": "Shared\\Footer.razor",
       "FileKind": "component"
     },
     {
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Landing.razor",
       "TargetPath": "Shared\\Components\\Landing.razor",
       "FileKind": "component"
     },
     {
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Card.razor",
       "TargetPath": "Shared\\Components\\Card.razor",
       "FileKind": "component"
     },
     {
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
@@ -13403,6 +13446,14 @@
       "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Pages\\About.razor",
       "TargetPath": "Pages\\About.razor",
       "FileKind": "component"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "FilePath": "c:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\larrycerro\\Shared\\Components\\Feature.razor",
+      "TargetPath": "Shared\\Components\\Feature.razor",
+      "FileKind": "component"
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
     }
   ],
   "SerializationFormat": "0.2"

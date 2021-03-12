@@ -89,7 +89,11 @@ using larrycerro.Shared.Components;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< HEAD
     [Microsoft.AspNetCore.Components.RouteAttribute("/About")]
+=======
+    [Microsoft.AspNetCore.Components.RouteAttribute("/AboutLarry")]
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
     public partial class About : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

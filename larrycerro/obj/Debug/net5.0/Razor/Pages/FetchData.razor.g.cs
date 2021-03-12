@@ -96,8 +96,13 @@ using larrycerro.Shared.Components;
             __builder.AddMarkupContent(1, "<p>This component demonstrates fetching data from the server.</p>");
 #nullable restore
 #line 8 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
  if (forecasts == null)
 {
+=======
+ if (forecasts == null)
+{
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden
@@ -105,9 +110,15 @@ using larrycerro.Shared.Components;
             __builder.AddMarkupContent(2, "<p><em>Loading...</em></p>");
 #nullable restore
 #line 11 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
 }
 else
 {
+=======
+}
+else
+{
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden
@@ -118,8 +129,13 @@ else
             __builder.OpenElement(6, "tbody");
 #nullable restore
 #line 24 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
              foreach (var forecast in forecasts)
             {
+=======
+             foreach (var forecast in forecasts)
+            {
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden
@@ -175,7 +191,11 @@ else
             __builder.CloseElement();
 #nullable restore
 #line 32 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
             }
+=======
+            }
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden
@@ -184,7 +204,11 @@ else
             __builder.CloseElement();
 #nullable restore
 #line 35 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden
@@ -193,6 +217,7 @@ else
         #pragma warning restore 1998
 #nullable restore
 #line 37 "/home/tee/Documents/websites/larrycerro/Pages/FetchData.razor"
+<<<<<<< HEAD
        
     private WeatherForecast[] forecasts;
 
@@ -211,6 +236,26 @@ else
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
+=======
+       
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
 
 #line default
 #line hidden

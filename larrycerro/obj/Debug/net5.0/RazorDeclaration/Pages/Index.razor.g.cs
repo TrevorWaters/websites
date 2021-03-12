@@ -97,6 +97,7 @@ using larrycerro.Shared.Components;
         {
         }
         #pragma warning restore 1998
+<<<<<<< HEAD
 #nullable restore
 #line 37 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\Pages\Index.razor"
        
@@ -119,6 +120,8 @@ public Dictionary<string, object> InputAttributes { get; set; } =
 #line default
 #line hidden
 #nullable disable
+=======
+>>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
     }
 }
 #pragma warning restore 1591
