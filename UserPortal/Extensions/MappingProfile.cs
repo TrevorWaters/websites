@@ -1,6 +1,7 @@
 using AutoMapper;
 using UserPortal.ViewModels;
-using UserPortal.Data;
+using UserPortal.Models;
+using System.Collections.Generic;
 
 namespace UserPortal.Extensions
 {
@@ -8,8 +9,11 @@ namespace UserPortal.Extensions
     {
         public MappingProfile()
         {
-            CreateMap<UserViewModel, UserViewModel>();
-            CreateMap<UserRolesViewModel, UserRolesViewModel>();
+            CreateMap<User, UserViewModel>();
+
+            CreateMap<UserViewModel, User>();
+
+            CreateMap<Role, RolesViewModel>();
         }
     }
 }

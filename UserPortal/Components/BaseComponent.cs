@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using AutoMapper;
 using System.Threading.Tasks;
-using UserPortal.Data;
-using UserPortal;
+using UserPortal.Models;
+using UserPortal.Extensions;
 using UserPortal.ViewModels;
 
 public abstract class BaseComponent: ComponentBase, IDisposable
@@ -14,9 +14,9 @@ public abstract class BaseComponent: ComponentBase, IDisposable
     // ... ... ...
 
     [Inject]
-    protected IDbContextFactory<UserPortalContext> DbContextFactory { get; set; }
+    protected IDbContextFactory<UsersContext> DbContextFactory { get; set; }
 
-    protected UserPortalContext DbContext { get; set; }
+    protected UsersContext DbContext { get; set; }
 
     [Inject]
     protected IMapper Mapper { get; set; }
@@ -39,17 +39,20 @@ public abstract class BaseComponent: ComponentBase, IDisposable
     /// <returns></returns>
     public async Task<List<UserViewModel>> GetUsersAsync()
     {
-        return await DbContext.Users.ToListAsync();
+        var users = await DbContext.Users.ToListAsync();
+        var userList = Mapper.Map<List<User>, List<UserViewModel>>(users);
+        return userList;
     }
     /// <summary>
     /// This method add a new user to the DbContext and saves it
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
-    public async Task<UserViewModel> AddUserAsync(UserViewModel user)
+    public async Task<UserViewModel> AddUserAsync(UserViewModel userVM)
     {
         try
         {
+            var user = Mapper.Map<UserViewModel, User>(userVM);
             DbContext.Users.Add(user);
             await DbContext.SaveChangesAsync();
         }
@@ -57,20 +60,22 @@ public abstract class BaseComponent: ComponentBase, IDisposable
         {
             throw;
         }
-        return user;
+        return userVM;
     }
     /// <summary>
     /// This method update and existing user and saves the changes
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
-    public async Task<UserViewModel> UpdateUserAsync(UserViewModel user)
+    public async Task<UserViewModel> UpdateUserAsync(UserViewModel userVM)
     {
         try
         {
-            var productExist = DbContext.Users.FirstOrDefault(p => p.UserId == user.UserId);
-            if (productExist != null)
+
+            var userExist = DbContext.Users.FirstOrDefault(p => p.UserId == userVM.UserId);
+            if (userExist != null)
             {
+                var user = Mapper.Map<UserViewModel, User>(userVM);
                 DbContext.Update(user);
                 await DbContext.SaveChangesAsync();
             }
@@ -79,17 +84,18 @@ public abstract class BaseComponent: ComponentBase, IDisposable
         {
             throw;
         }
-        return user;
+        return userVM;
     }
     /// <summary>
     /// This method removes and existing user from the DbContext and saves it
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
-    public async Task DeleteUserAsync(UserViewModel user)
+    public async Task DeleteUserAsync(UserViewModel userVM)
     {
         try
         {
+            var user = Mapper.Map<UserViewModel, User>(userVM);
             DbContext.Users.Remove(user);
             await DbContext.SaveChangesAsync();
         }
@@ -97,6 +103,30 @@ public abstract class BaseComponent: ComponentBase, IDisposable
         {
             throw;
         }
+    }
+
+        /// <summary>
+    /// This method removes and existing user from the DbContext and saves it
+    /// </summary>
+    /// <param name="user"></param>
+    /// <returns></returns>
+    public async Task<IEnumerable<RolesViewModel>> GetRolesAsync(IEnumerable<RolesViewModel> rolesVM)
+    {
+        try
+        {
+            if (rolesVM == null)
+            {
+                var roles = await DbContext.Roles.ToListAsync();
+                rolesVM = Mapper.Map<IEnumerable<Role>, IEnumerable<RolesViewModel>>(roles);
+                return rolesVM;
+            }
+
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+        return rolesVM;
     }
     #endregion Public methods
 

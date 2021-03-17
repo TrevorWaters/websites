@@ -8,11 +8,11 @@ namespace UserPortal.ViewModels
     {
         public UserViewModel()
         {
-            UserRoles = new HashSet<UserRolesViewModel>();
+            Roles = new HashSet<RolesViewModel>();
         }
         
-        [Key]
-        public int UserId { get; set; }
+        public IEnumerable<RolesViewModel> Roles { get; set; }
+        public long UserId { get; set; }
         public string FirstName { get; set; }
         public string MiddleInitial { get; set; }
         public string LastName { get; set; }
@@ -22,10 +22,8 @@ namespace UserPortal.ViewModels
         public string AgencyName { get; set; }
         public string AgencyAddress { get; set; }
         public string AgencyCity { get; set; }
-        public string AgencyZipCode { get; set; }
-        public bool IsApproved { get; set; }
-        public string Comments { get; set; }
-
-        public virtual ICollection<UserRolesViewModel> UserRoles { get; set; }
+        public long AgencyZipCode { get; set; }
+        public byte[] IsApproved { get; set; }
+        public long? Comments { get; set; }
     }
 }

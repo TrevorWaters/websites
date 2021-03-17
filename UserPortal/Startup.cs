@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using UserPortal.Data;
+using UserPortal.Models;
 using AutoMapper;
 using UserPortal.Extensions;
 
@@ -32,9 +32,9 @@ namespace UserPortal
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
-            services.AddDbContextFactory<UserPortalContext>(options =>
+            services.AddDbContextFactory<UsersContext>(options =>
             {
-                options.UseSqlite($"Data Source = Users.db");
+                options.UseSqlite(Configuration.GetConnectionString("Users"));
             });
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }

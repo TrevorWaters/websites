@@ -1,4 +1,5 @@
 @page "/AddUser"
+@inherits BaseComponent;
 
 <!--
   This example requires Tailwind CSS v2.0+ 
@@ -16,8 +17,7 @@
   }
   ```
 -->
-<EditForm Model="@User" OnValidSubmit="@HandleValidSubmit">
-  <form class="space-y-8 divide-y divide-gray-200">
+<EditForm Model="@UserVM" OnValidSubmit="@HandleValidSubmit" class="space-y-8 divide-y divide-gray-200">
     <div class="space-y-8 divide-y divide-gray-200">
       <div class="pt-8">
         <div>
@@ -34,7 +34,7 @@
               First Name
             </label>
             <div class="mt-1">
-              <InputText name="first_name" type="text" id="first_name" @bind-Value="User.FirstName" autocomplete="given-name"
+              <InputText name="first_name" type="text" id="first_name" @bind-Value="UserVM.FirstName" autocomplete="given-name"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
 
@@ -45,7 +45,7 @@
               Last Name
             </label>
             <div class="mt-1">
-              <InputText type="text" @bind-Value="User.LastName" id="last_name" autocomplete="family-name"
+              <InputText type="text" @bind-Value="UserVM.LastName" id="last_name" autocomplete="family-name"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
           </div>
@@ -55,9 +55,28 @@
               Email Address
             </label>
             <div class="mt-1">
-              <InputText @bind-Value="User.EmailAddress" id="email" name="email" type="email" autocomplete="email"
+              <InputText @bind-Value="UserVM.EmailAddress" id="email" name="email" type="email" autocomplete="email"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
+          </div>
+
+            <div class="sm:col-span-3">
+              <label for="phone" class="block text-sm font-medium text-gray-700">
+                Work Phone Number
+              </label>
+              <div class="mt-1">
+                <InputText @bind-Value="UserVM.WorkPhone" id="phone" name="phone" type="text" autocomplete="tel-national"
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+              </div>
+            </div>
+           @*  <div class="sm:col-span-1">
+              <label for="phoneExt" class="block text-sm font-medium text-gray-700">
+                Extension
+              </label>
+               <div class="mt-1">
+                <InputText @bind-Value="User.WorkPhone" id="phoneExt" name="phoneExt" type="text" autocomplete="tel-extension"
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+              </div> *@
           </div>
 
           <div class="sm:col-span-6">
@@ -65,7 +84,7 @@
               Agency Street Address
             </label>
             <div class="mt-1">
-              <InputText type="text" @bind-Value="User.AgencyAddress" name="street_address" id="street_address" autocomplete="street-address"
+              <InputText type="text" @bind-Value="UserVM.AgencyAddress" name="street_address" id="street_address" autocomplete="street-address"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
           </div>
@@ -75,7 +94,7 @@
               Agency City
             </label>
             <div class="mt-1">
-              <InputText type="text" @bind-Value="User.AgencyCity" name="city" id="city"
+              <InputText type="text" @bind-Value="UserVM.AgencyCity" name="city" id="city"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
           </div>
@@ -85,95 +104,63 @@
               Agency ZIP Code
             </label>
             <div class="mt-1">
-              <InputText type="text" @bind-Value="User.AgencyZipCode" name="zip" id="zip" autocomplete="postal-code"
+              <InputNumber @bind-Value="@UserVM.AgencyZipCode" name="zip" id="zip" autocomplete="postal-code"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
             </div>
           </div>
+      @*    <div class="sm:col-span-6">
+            <label for="about" class="block text-sm font-medium text-gray-700">
+              Comments
+            </label>
+            <div class="mt-1">
+              <InputTextArea id="about" @bind-Value="@UserVM.Comments.ToString()" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+            </div>
+            <p class="mt-2 text-sm text-gray-500">Please include any additional information here.</p>
+          </div>  *@
         </div>
       </div>
 
       <div class="pt-8">
         <div>
           <h3 class="text-lg leading-6 font-medium text-gray-900">
-            Notifications
+            User Role
           </h3>
           <p class="mt-1 text-sm text-gray-500">
-            We'll always let you know about important changes, but you pick what else you want to hear about.
+            Please select a role within the application.
           </p>
         </div>
         <div class="mt-6">
           <fieldset>
-            <legend class="text-base font-medium text-gray-900">
-              By Email
+            <legend class="sr-only">
+              Select User Role
             </legend>
-            <div class="mt-4 space-y-4">
-              <div class="relative flex items-start">
+
+            <div x-data="{ active : null }" class="bg-white rounded-md -space-y-px">
+              @foreach (var role in Roles)
+              {
+              <!-- On: "bg-indigo-50 border-indigo-200 z-10", Off: "border-gray-200" -->
+              <div
+                  :class="{'bg-indigo-50 border-indigo-200 z-10': active == 0, 'border-gray-200': active != 0 }" class="relative border rounded-tl-md rounded-tr-md p-4 flex">
                 <div class="flex items-center h-5">
-                  <input id="comments" name="comments" type="checkbox"
-                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                  <input id="settings-option-0" @click="active = 0"
+                  :aria-checked="active == 0" name="privacy_setting" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 cursor-pointer border-gray-300">
                 </div>
-                <div class="ml-3 text-sm">
-                  <label for="comments" class="font-medium text-gray-700">Comments</label>
-                  <p class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
-                </div>
-              </div>
-              <div class="relative flex items-start">
-                <div class="flex items-center h-5">
-                  <input id="candidates" name="candidates" type="checkbox"
-                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-                </div>
-                <div class="ml-3 text-sm">
-                  <label for="candidates" class="font-medium text-gray-700">Candidates</label>
-                  <p class="text-gray-500">Get notified when a candidate applies for a job.</p>
-                </div>
-              </div>
-              <div class="relative flex items-start">
-                <div class="flex items-center h-5">
-                  <input id="offers" name="offers" type="checkbox"
-                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-                </div>
-                <div class="ml-3 text-sm">
-                  <label for="offers" class="font-medium text-gray-700">Offers</label>
-                  <p class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="mt-6">
-            <div>
-              <legend class="text-base font-medium text-gray-900">
-                Push Notifications
-              </legend>
-              <p class="text-sm text-gray-500">These are delivered via SMS to your mobile phone.</p>
-            </div>
-            <div class="mt-4 space-y-4">
-              <div class="flex items-center">
-                <input id="push_everything" name="push_notifications" type="radio"
-                  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                <label for="push_everything" class="ml-3 block text-sm font-medium text-gray-700">
-                  Everything
+                <label for="settings-option-0" class="ml-3 flex flex-col cursor-pointer">
+                  <!-- On: "text-indigo-900", Off: "text-gray-900" -->
+                  <span class="block text-sm font-medium" :class="{'text-indigo-900': active == 0, 'text-gray-900': active != 0 }" >
+                    @role.RoleName
+                  </span>
+                  <!-- On: "text-indigo-700", Off: "text-gray-500" -->
+                  <span class="block text-sm" :class="{'text-indigo-700': active == 0, 'text-gray-500': active != 0 }">
+                    This project would be available to anyone who has the link
+                  </span>
                 </label>
               </div>
-              <div class="flex items-center">
-                <input id="push_email" name="push_notifications" type="radio"
-                  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                <label for="push_email" class="ml-3 block text-sm font-medium text-gray-700">
-                  Same as email
-                </label>
-              </div>
-              <div class="flex items-center">
-                <input id="push_nothing" name="push_notifications" type="radio"
-                  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                <label for="push_nothing" class="ml-3 block text-sm font-medium text-gray-700">
-                  No push notifications
-                </label>
-              </div>
+              }
             </div>
           </fieldset>
         </div>
       </div>
-    </div>
-
     <div class="pt-5">
       <div class="flex justify-end">
         <button type="button"
@@ -186,13 +173,21 @@
         </button>
       </div>
     </div>
-  </form>
 </EditForm>
 
 @code {
-  private UserViewModel User = new UserViewModel();
+  private UserViewModel UserVM = new UserViewModel();
 
-  private void HandleValidSubmit()
+  private IEnumerable<RolesViewModel> Roles;
+
+        protected override async Task OnInitializedAsync()
+    {
+        InitDependencies();
+        Roles = await GetRolesAsync(Roles);
+    }
+
+  private async void HandleValidSubmit()
   {
+    await AddUserAsync(UserVM);
   }
 }
