@@ -8,11 +8,12 @@ namespace UserPortal.ViewModels
     {
                 
         [Key]
-        public int UserRoleId { get; set; }
-        public int UserId { get; set; }
-        public int RoleId { get; set; }
-        public bool IsCW { get; set; }
-        public bool IsAIMS { get; set; }
+        public long UserRoleId { get; set; }
+        public long UserId { get; set; }
+        public long RoleId { get; set; }
+        public byte[] IsCw { get; set; }
+        public byte[] IsAims { get; set; }
+        public byte[] IsApproved { get; set; }
 
         public virtual RolesViewModel Role { get; set; }
     }

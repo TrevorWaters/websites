@@ -135,6 +135,13 @@ using System.Threading.Tasks;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 19 "/home/tee/Documents/websites/UserPortal/_Imports.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/AddUser")]
     public partial class AddUser : BaseComponent
     {
@@ -144,7 +151,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 178 "/home/tee/Documents/websites/UserPortal/Pages/AddUser.razor"
+#line 197 "/home/tee/Documents/websites/UserPortal/Pages/AddUser.razor"
        
   private UserViewModel UserVM = new UserViewModel();
 

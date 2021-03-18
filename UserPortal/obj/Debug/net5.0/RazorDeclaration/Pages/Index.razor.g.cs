@@ -135,6 +135,13 @@ using System.Threading.Tasks;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 19 "/home/tee/Documents/websites/UserPortal/_Imports.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : BaseComponent
     {
@@ -144,7 +151,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 60 "/home/tee/Documents/websites/UserPortal/Pages/Index.razor"
+#line 70 "/home/tee/Documents/websites/UserPortal/Pages/Index.razor"
        
     private List<UserViewModel> Users = new List<UserViewModel>();
     private List<UserRolesViewModel> Roles = new List<UserRolesViewModel>();
