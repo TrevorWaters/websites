@@ -7,7 +7,9 @@ module.exports = {
 
   },
   variants: {
-    extend: {},
+    extend: {
+      ringColor: ['active'],
+    },
   },
   plugins: [
     require ('@tailwindcss/forms'),

@@ -5256,24 +5256,26 @@
     ]
   },
   "packageFolders": {
-    "/home/tee/.nuget/packages/": {}
+    "C:\\Users\\taw11\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tee/Documents/websites/UserPortal/UserPortal.csproj",
+      "projectUniqueName": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\UserPortal\\UserPortal.csproj",
       "projectName": "UserPortal",
-      "projectPath": "/home/tee/Documents/websites/UserPortal/UserPortal.csproj",
-      "packagesPath": "/home/tee/.nuget/packages/",
-      "outputPath": "/home/tee/Documents/websites/UserPortal/obj/",
+      "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\UserPortal\\UserPortal.csproj",
+      "packagesPath": "C:\\Users\\taw11\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\UserPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/tee/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\taw11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5351,7 +5353,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,75 +1,79 @@
 @page "/"
 @inherits BaseComponent
-
+@inject ToastService toastService
 <Title value="User Portal Dashboard" />
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="flex flex-col">
-  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-        <table class="min-w-full divide-y divide-gray-200">
-          <thead class="bg-gray-50">
-            <tr>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Name
-              </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Title
-              </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Email
-              </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Approved
-              </th>
-              <th scope="col" class="relative px-6 py-3">
-                <span class="sr-only">Edit</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            @{var even = true;}
-            @foreach (var user in Users)
-            {
-            <tr class="@(even == true ? "bg-white" : "bg-gray-50")">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                @($"{user.FirstName} {user.LastName}")
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                @user.JobTitle
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                @user.EmailAddress
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              
-              </td>
-              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <button type="button" x-data="{ isActive: false }" @click="isActive = !isActive" class="flex-shrink-0 group relative rounded-full inline-flex items-center justify-center h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-pressed="false">
-                  <span class="sr-only">Use setting</span>
-                  <span aria-hidden="true" class="pointer-events-none absolute bg-white w-full h-full rounded-md"></span>
-                  <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-                  <span aria-hidden="true" :class="{'bg-indigo-600': isActive, 'bg-gray-200': !isActive}" class="bg-gray-200 pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200"></span>
-                  <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                  <span aria-hidden="true" :class="{'translate-x-5': isActive, 'translate-x-0': !isActive}" class="translate-x-0 pointer-events-none absolute left-0 inline-block h-5 w-5 border border-gray-200 rounded-full bg-white shadow transform ring-0 transition-transform ease-in-out duration-200"></span>
-                </button>
+    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Title
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Email
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Approved
+                            </th>
+                            <th scope="col" class="relative px-6 py-3">
+                                <span class="sr-only">Edit</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{var even = true;}
+                        @foreach (var user in Users)
+                        {
 
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-              </td>
-            </tr>
-             even = !even;
-            }
-          </tbody>
-        </table>
-      </div>
+                            <tr class="@(even == true ? "bg-white" : "bg-gray-50")">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                    @($"{user.FirstName} {user.LastName}")
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    @user.JobTitle
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    @user.EmailAddress
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <!-- This example requires Tailwind CSS v2.0+ -->
+                                    <button type="button" x-data="{ userIsActive : @(user.IsActive == 0 ? "true" : "false") }" @onclick='(() => ToggleUserIsActive(user.UserId))' class="flex-shrink-0 group relative rounded-full inline-flex items-center justify-center h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-pressed="false">
+                                        <span class="sr-only">Use setting</span>
+                                        <span aria-hidden="true" class="pointer-events-none absolute bg-white w-full h-full rounded-md"></span>
+                                        <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+                                        <span aria-hidden="true" :class="{'bg-indigo-600': userIsActive, 'bg-gray-200': !userIsActive}" class="bg-gray-200 pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200"></span>
+                                        <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                                        <span aria-hidden="true" :class="{'translate-x-5': userIsActive, 'translate-x-0': !userIsActive}" class="translate-x-0 pointer-events-none absolute left-0 inline-block h-5 w-5 border border-gray-200 rounded-full bg-white shadow transform ring-0 transition-transform ease-in-out duration-200"></span>
+                                    </button>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-right ">
+                                    <button @onclick='() => UserIdtoDelete = user.UserId' class="text-indigo-600 text-sm font-medium hover:text-indigo-900">Delete</button>
+                                </td>
+                            </tr>
+                            even = !even;
+                            <ModalWindow Message="Are you sure you want to delete this User?" Hide="@(UserIdtoDelete == 0)" OnClickCallback="DeleteUser" />
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
-  </div>
 </div>
 
 @code {
     private List<UserViewModel> Users = new List<UserViewModel>();
     private List<UserRolesViewModel> Roles = new List<UserRolesViewModel>();
+    private bool UserIsActive { get; set; }
+    private long UserIdtoDelete { get; set; }
+    public bool DeleteConfirmed { get; set; } = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -97,11 +101,29 @@
         await UpdateUserAsync(UpdateUser);
         await RefreshUsers();
     }
-    private async Task DeleteUser(UserViewModel user)
+    private async Task ToggleUserApproval(long userId)
     {
-        await DeleteUserAsync(user);
+        await ToggleUserApprovalAsync(userId);
+    }
+
+    private async Task ToggleUserIsActive(long userId)
+    {
+        await ToggleUserIsActiveAsync(userId);
         await RefreshUsers();
-    } 
+        toastService.ShowToast("Success!", ToastLevel.Success);
+    }
+    private async Task DeleteUser()
+    {
+        if (UserIdtoDelete !=0)
+        {
+            await DeleteUserAsync(UserIdtoDelete);
+            UserIdtoDelete = 0;
+            await RefreshUsers();
+            toastService.ShowToast("Success!", ToastLevel.Success);
+
+        }
+
+    }
 
 
 }

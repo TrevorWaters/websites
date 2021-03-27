@@ -19,5 +19,6 @@ namespace UserPortal.Models
         public string AgencyCity { get; set; }
         public string AgencyZipCode { get; set; }
         public string Comments { get; set; }
+        public long? IsActive { get; set; }
     }
 }

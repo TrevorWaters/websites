@@ -8,7 +8,6 @@ namespace UserPortal.Models
 {
     public partial class UsersContext : DbContext
     {
-
         public UsersContext(DbContextOptions<UsersContext> options)
             : base(options)
         {
@@ -32,6 +31,10 @@ namespace UserPortal.Models
             {
                 entity.HasIndex(e => e.RoleId, "IX_Roles_RoleId")
                     .IsUnique();
+
+                entity.Property(e => e.Description)
+                    .IsRequired()
+                    .HasDefaultValueSql("'None'");
 
                 entity.Property(e => e.RoleName).IsRequired();
             });
@@ -65,20 +68,9 @@ namespace UserPortal.Models
                 entity.HasIndex(e => e.UserRoleId, "IX_UserRoles_UserRoleId")
                     .IsUnique();
 
-                entity.Property(e => e.IsAims)
-                    .IsRequired()
-                    .HasColumnType("NUMERIC")
-                    .HasColumnName("IsAIMS");
+                entity.Property(e => e.IsAims).HasColumnName("IsAIMS");
 
-                entity.Property(e => e.IsApproved)
-                    .IsRequired()
-                    .HasColumnType("NUMERIC")
-                    .HasDefaultValueSql("0");
-
-                entity.Property(e => e.IsCw)
-                    .IsRequired()
-                    .HasColumnType("NUMERIC")
-                    .HasColumnName("IsCW");
+                entity.Property(e => e.IsCw).HasColumnName("IsCW");
             });
 
             OnModelCreatingPartial(modelBuilder);

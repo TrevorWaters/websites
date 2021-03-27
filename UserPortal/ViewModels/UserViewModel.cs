@@ -8,10 +8,11 @@ namespace UserPortal.ViewModels
     {
         public UserViewModel()
         {
-            Roles = new HashSet<RolesViewModel>();
+            Roles = new UserRolesViewModel();
         }
         
-        public IEnumerable<RolesViewModel> Roles { get; set; }
+        public UserRolesViewModel Roles { get; set; }
+        public int RoleId { get; set; }
         public long UserId { get; set; }
         [Required]
         [Display(Name = "First Name")]
@@ -47,5 +48,6 @@ namespace UserPortal.ViewModels
         
         public string AgencyZipCode { get; set; }
         public string Comments { get; set; }
+        public long? IsActive { get; set; }
     }
 }

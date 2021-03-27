@@ -10,9 +10,8 @@ namespace UserPortal.Extensions
         public MappingProfile()
         {
             CreateMap<User, UserViewModel>();
-
+            CreateMap<UserRole, UserRolesViewModel>();
             CreateMap<UserViewModel, User>();
-
             CreateMap<Role, RolesViewModel>();
         }
     }

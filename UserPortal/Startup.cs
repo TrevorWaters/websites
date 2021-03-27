@@ -37,6 +37,7 @@ namespace UserPortal
                 options.UseSqlite(Configuration.GetConnectionString("Users"));
             });
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<ToastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

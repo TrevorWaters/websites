@@ -10,8 +10,8 @@ namespace UserPortal.Models
         public long UserRoleId { get; set; }
         public long UserId { get; set; }
         public long RoleId { get; set; }
-        public byte[] IsCw { get; set; }
-        public byte[] IsAims { get; set; }
-        public byte[] IsApproved { get; set; }
+        public long IsCw { get; set; }
+        public long IsAims { get; set; }
+        public long IsApproved { get; set; }
     }
 }

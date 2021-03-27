@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/tee/.dotnet/store/|arch|/|tfm|",
-      "/home/tee/.nuget/packages"
+      "C:\\Users\\taw11\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\taw11\\.nuget\\packages"
     ]
   }
 }
