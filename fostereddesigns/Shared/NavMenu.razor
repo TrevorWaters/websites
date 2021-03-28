@@ -1,11 +1,11 @@
 ﻿<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white">
+<div class="relative bg-warmGray-100">
   <div
     class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
     <div class="flex justify-start lg:w-0 lg:flex-1">
       <a href="#">
         <span class="sr-only">Fostered Designs</span>
-        <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+        <img class="h-8 w-auto sm:h-10" src="images/logo.png" alt="">
       </a>
     </div>
     <div class="-mr-2 -my-2 md:hidden">
@@ -26,7 +26,7 @@
         <button type="button" @click="isOpen = !isOpen"
           class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           aria-expanded="false">
-          <span>Solutions</span>
+          <span>Services</span>
           <!--
                 Heroicon name: solid/chevron-down
 
@@ -70,11 +70,11 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Analytics
+                    Consulting
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
-                    Get a better understanding of where your traffic is coming from.
-                  </p>
+                    Let us help you with your online presence.
+                    </p>
                 </div>
               </a>
 
@@ -90,7 +90,7 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Engagement
+                    Social Media
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
                     Speak directly to your customers in a more meaningful way.
@@ -110,10 +110,10 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Security
+                    IT
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
-                    Your customers&#039; data will be safe and secure.
+                    Need some networking solutions for your small business? We've got you covered.
                   </p>
                 </div>
               </a>
@@ -130,10 +130,10 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Integrations
+                    Website Design
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
-                    Connect with third-party tools that you&#039;re already using.
+                    Let us help you create the foundation for your business's online presence.
                   </p>
                 </div>
               </a>
@@ -150,10 +150,10 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Automations
+                    Web-Hosting
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
-                    Build strategic funnels that will drive your customers to convert
+                    We'll host your small business website and take care of everything.
                   </p>
                 </div>
               </a>
@@ -170,10 +170,10 @@
                 </div>
                 <div class="ml-4">
                   <p class="text-base font-medium text-gray-900">
-                    Reports
+                    Trainings
                   </p>
                   <p class="mt-1 text-sm text-gray-500">
-                    Get detailed reports that will help you make more informed decisions
+                    Get the tools your business needs to succeed online.
                   </p>
                 </div>
               </a>
@@ -281,12 +281,32 @@
       </div>
     </nav>
     <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-      <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-        Sign in
-      </a>
+      <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
       <a href="#"
-        class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-        Sign up
+        class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-lime-200 bg-warmGray-600 hover:bg-warmGray-700">
+        Contact
       </a>
     </div>
   </div>

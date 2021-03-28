@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: ["./Pages/**/*.razor", "./**/*.html", "./Shared/**/*.razor"],
@@ -5,9 +7,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: theme => ({
+      colors: {
+        lime: colors.lime,
+        warmGray: colors.warmGray,
+        lightBlue: colors.lightBlue
+      }
+/*       backgroundImage: theme => ({
         'hero-pattern': "url('\assets\images\guyisinrafters.jpeg')"
-       })
+       }) */
     },
   },
   variants: {
