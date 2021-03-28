@@ -90,7 +90,7 @@ using kristinsite.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 60 "/home/tee/Documents/websites/kristinsite/Client/Shared/ProductModal.razor"
+#line 59 "/home/tee/Documents/websites/kristinsite/Client/Shared/ProductModal.razor"
        
     [Parameter]
     public long ProductId { get; set; }
@@ -98,8 +98,6 @@ using kristinsite.Client.Shared;
     public bool Show { get; set; } = true;
     [Parameter]
     public EventCallback<bool> ModalClosed { get; set; }
-    
-    
 
 #line default
 #line hidden

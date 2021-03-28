@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sS/PbCn2Qo2gWoD1AWE5w9YNHL8Iz5vdCyityF6yOocJlf27NOduZp6XWD/IYCrpqenBcQs8m7DH7HldUHn9vg==",
+  "dgSpecHash": "iEF5ywEM5q1mLVWo76QqHgVUjSFMEnK0mah7KzL/Bya8YzmrAFuKIdUrqgwmbdpIZUSb5d28k0zTgnLOFYoFEw==",
   "success": true,
   "projectFilePath": "/home/tee/Documents/websites/kristinsite/Client/kristinsite.Client.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,15 @@
     "/home/tee/.nuget/packages/microsoft.aspnetcore.components.web/5.0.2/microsoft.aspnetcore.components.web.5.0.2.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.aspnetcore.components.webassembly/5.0.2/microsoft.aspnetcore.components.webassembly.5.0.2.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/5.0.2/microsoft.aspnetcore.components.webassembly.devserver.5.0.2.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.connections.abstractions/5.0.4/microsoft.aspnetcore.connections.abstractions.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.http.connections.client/5.0.4/microsoft.aspnetcore.http.connections.client.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.http.connections.common/5.0.4/microsoft.aspnetcore.http.connections.common.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.http.features/5.0.4/microsoft.aspnetcore.http.features.5.0.4.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.aspnetcore.metadata/5.0.2/microsoft.aspnetcore.metadata.5.0.2.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.signalr.client/5.0.4/microsoft.aspnetcore.signalr.client.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.signalr.client.core/5.0.4/microsoft.aspnetcore.signalr.client.core.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.signalr.common/5.0.4/microsoft.aspnetcore.signalr.common.5.0.4.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.aspnetcore.signalr.protocols.json/5.0.4/microsoft.aspnetcore.signalr.protocols.json.5.0.4.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/home/tee/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0/microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
@@ -30,7 +38,8 @@
     "/home/tee/.nuget/packages/microsoft.jsinterop.webassembly/5.0.2/microsoft.jsinterop.webassembly.5.0.2.nupkg.sha512",
     "/home/tee/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/home/tee/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
-    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.3/microsoft.netcore.app.runtime.browser-wasm.5.0.3.nupkg.sha512"
+    "/home/tee/.nuget/packages/system.threading.channels/5.0.0/system.threading.channels.5.0.0.nupkg.sha512",
+    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.4/microsoft.netcore.app.runtime.browser-wasm.5.0.4.nupkg.sha512"
   ],
   "logs": []
 }

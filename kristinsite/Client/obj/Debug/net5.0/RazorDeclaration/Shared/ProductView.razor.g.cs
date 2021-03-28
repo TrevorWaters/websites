@@ -82,6 +82,7 @@ using kristinsite.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Store/Product/{ProductId:long}")]
     public partial class ProductView : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +90,15 @@ using kristinsite.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 84 "/home/tee/Documents/websites/kristinsite/Client/Shared/ProductView.razor"
+       
+  [Parameter]
+  public long ProductId { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

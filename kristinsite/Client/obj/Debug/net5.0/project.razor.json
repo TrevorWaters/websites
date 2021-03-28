@@ -8,288 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1565378872,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 208484433,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.NavMenu",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2098855400,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.Footer",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Footer"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.Footer"
-        }
-      },
-      {
-        "HashCode": -1356588880,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.Footer",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.Footer"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.Footer",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 594424644,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.MainLayout",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": 1214674345,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.MainLayout",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -951675125,
-        "Kind": "Components.ChildContent",
-        "Name": "kristinsite.Client.Shared.MainLayout.Body",
-        "AssemblyName": "kristinsite.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "kristinsite.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 2124686671,
-        "Kind": "Components.ChildContent",
-        "Name": "kristinsite.Client.Shared.MainLayout.Body",
-        "AssemblyName": "kristinsite.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "kristinsite.Client.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "kristinsite.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -574677479,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductModal",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProductModal"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ProductId",
-            "TypeName": "System.Int64",
-            "Metadata": {
-              "Common.PropertyName": "ProductId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Show",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Show"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ModalClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
-            "Metadata": {
-              "Common.PropertyName": "ModalClosed",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductModal"
-        }
-      },
-      {
-        "HashCode": -1919306177,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductModal",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.ProductModal"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ProductId",
-            "TypeName": "System.Int64",
-            "Metadata": {
-              "Common.PropertyName": "ProductId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Show",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Show"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ModalClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
-            "Metadata": {
-              "Common.PropertyName": "ModalClosed",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductModal",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -236488140,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductView",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProductView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductView"
-        }
-      },
-      {
-        "HashCode": -1068886227,
-        "Kind": "Components.Component",
-        "Name": "kristinsite.Client.Shared.ProductView",
-        "AssemblyName": "kristinsite.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kristinsite.Client.Shared.ProductView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kristinsite.Client.Shared.ProductView",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -677154064,
         "Kind": "Components.Component",
         "Name": "kristinsite.Client.App",
@@ -484,6 +202,308 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "kristinsite.Client.Pages.Store",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2098855400,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.Footer",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Footer"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.Footer"
+        }
+      },
+      {
+        "HashCode": -1356588880,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.Footer",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Shared.Footer"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.Footer",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 594424644,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.MainLayout",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 1214674345,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.MainLayout",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -951675125,
+        "Kind": "Components.ChildContent",
+        "Name": "kristinsite.Client.Shared.MainLayout.Body",
+        "AssemblyName": "kristinsite.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "kristinsite.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 2124686671,
+        "Kind": "Components.ChildContent",
+        "Name": "kristinsite.Client.Shared.MainLayout.Body",
+        "AssemblyName": "kristinsite.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "kristinsite.Client.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "kristinsite.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1565378872,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.NavMenu",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 208484433,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.NavMenu",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -574677479,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.ProductModal",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProductModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal"
+        }
+      },
+      {
+        "HashCode": -1919306177,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.ProductModal",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Shared.ProductModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Show",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Show"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ModalClosed",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Boolean>",
+            "Metadata": {
+              "Common.PropertyName": "ModalClosed",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductModal",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 840130809,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.ProductView",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProductView"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductView"
+        }
+      },
+      {
+        "HashCode": 813842926,
+        "Kind": "Components.Component",
+        "Name": "kristinsite.Client.Shared.ProductView",
+        "AssemblyName": "kristinsite.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kristinsite.Client.Shared.ProductView"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "kristinsite.Client.Shared.ProductView",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

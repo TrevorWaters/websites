@@ -58,3 +58,11 @@
 /home/tee/Documents/websites/kristinsite/Server/obj/Debug/net5.0/ref/kristinsite.Server.dll
 /home/tee/Documents/websites/kristinsite/Server/obj/Debug/net5.0/kristinsite.Server.pdb
 /home/tee/Documents/websites/kristinsite/Server/obj/Debug/net5.0/kristinsite.Server.genruntimeconfig.cache
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Connections.Common.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.SignalR.Client.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.SignalR.Common.dll
+/home/tee/Documents/websites/kristinsite/Server/bin/Debug/net5.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll

@@ -98,7 +98,7 @@ using kristinsite.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 136 "/home/tee/Documents/websites/kristinsite/Client/Pages/Store.razor"
+#line 137 "/home/tee/Documents/websites/kristinsite/Client/Pages/Store.razor"
        
     private Products[] products;
     
@@ -123,6 +123,7 @@ using kristinsite.Shared;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager _navigation { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
