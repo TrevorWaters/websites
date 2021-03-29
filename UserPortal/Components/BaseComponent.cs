@@ -39,10 +39,38 @@ public abstract class BaseComponent : ComponentBase, IDisposable
     /// <returns></returns>
     public async Task<List<UserViewModel>> GetUsersAsync()
     {
-        var users = await DbContext.Users.ToListAsync();
-        var userList = Mapper.Map<List<User>, List<UserViewModel>>(users);
-        return userList;
+        try 
+        {
+            var users = await DbContext.Users.ToListAsync();
+            var userList = Mapper.Map<List<User>, List<UserViewModel>>(users);
+            return userList;
+        }
+
+        catch 
+        {
+            throw;
+        }
     }
+
+     /// <summary>
+    /// This method returns a single user
+    /// </summary>
+    /// <returns></returns>
+    public async Task<UserViewModel> GetUserAsync(long userId)
+    {
+        try 
+        {
+            var user = await DbContext.Users.AsNoTracking().SingleOrDefaultAsync(x => x.UserId == userId);
+            var userVM = Mapper.Map<User, UserViewModel>(user);
+            return userVM;
+        }
+
+        catch 
+        {
+            throw;
+        }
+    }
+
     /// <summary>
     /// This method add a new user to the DbContext and saves it
     /// </summary>
@@ -85,13 +113,9 @@ public abstract class BaseComponent : ComponentBase, IDisposable
         try
         {
 
-            var userExist = DbContext.Users.FirstOrDefault(p => p.UserId == userVM.UserId);
-            if (userExist != null)
-            {
-                var user = Mapper.Map<UserViewModel, User>(userVM);
-                DbContext.Update(user);
-                await DbContext.SaveChangesAsync();
-            }
+            var user = Mapper.Map<UserViewModel, User>(userVM);
+            DbContext.Update(user);
+            await DbContext.SaveChangesAsync();
         }
         catch (Exception)
         {
@@ -119,25 +143,6 @@ public abstract class BaseComponent : ComponentBase, IDisposable
             throw;
         }
     }
-
-    /// <summary>
-    /// This method gets the information for a User.
-    /// </summary>
-    /// <param name="user"></param>
-    /// <returns></returns>
-    /* public async Task DeleteUserAsync(UserViewModel userVM)
-    {
-        try
-        {
-            var user = Mapper.Map<UserViewModel, User>(userVM);
-            DbContext.Users.Remove(user);
-            await DbContext.SaveChangesAsync();
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-    } */
 
         /// <summary>
     /// This method removes and existing user from the DbContext and saves it

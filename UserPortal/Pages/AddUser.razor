@@ -1,9 +1,18 @@
 @page "/AddUser"
+@page "/EditUser/{UserId:long}"
 @inherits BaseComponent;
 @inject NavigationManager NavigationManager
 @inject ToastService toastService
 
-<Title value="Add User"></Title>
+@if (UserId != 0)
+{
+    <Title value="Edit User"></Title>
+}
+else
+{
+    <Title value="Add User"></Title>
+
+}
 
 <EditForm Model="@UserVM" OnValidSubmit="@HandleValidSubmit" class="space-y-8 divide-y divide-gray-200">
     <DataAnnotationsValidator />
@@ -17,6 +26,7 @@
                     Please input the user's information.
                 </p>
             </div>
+            <input type="hidden" @bind-value="UserVM.UserId">
             <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
                 <div class="sm:col-span-3">
                     <CustomInputText Label="First Name" Id="first_name" @bind-Value="UserVM.FirstName" ValidationFor="@(() => UserVM.FirstName)" AutoComplete="given-name" />
@@ -121,7 +131,8 @@
 
 @code {
     private UserViewModel UserVM = new UserViewModel();
-
+    [Parameter]
+    public long UserId { get; set; }
 
 
     private IEnumerable<RolesViewModel> Roles;
@@ -130,11 +141,24 @@
     {
         InitDependencies();
         Roles = await GetRolesAsync(Roles);
+
+        if (UserId !=0)
+        {
+            UserVM = await GetUserAsync(UserId);
+            
+        }
     }
 
     private async void HandleValidSubmit()
     {
-        await AddUserAsync(UserVM);
+        if (UserId !=0)
+        {
+            await UpdateUserAsync(UserVM);
+        }
+        else 
+        {
+            await AddUserAsync(UserVM);
+        }
         toastService.ShowToast("Success!", ToastLevel.Success);
         NavigationManager.NavigateTo("/");
     }
