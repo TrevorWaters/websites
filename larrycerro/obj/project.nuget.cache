@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "04zNO+vPmd8wkDQQbiemm+c1ZR2LiRg85QzGiYqrd0GLggzrIeK1QsRBHE+2BOVsAHIYj6UufKdl3obMOeVZMQ==",
+  "dgSpecHash": "E+6tq9BFw718sE1H4otFMS/DaKRIcS0shnLrmjDNYLKcegaF6S5Av5RU7Fjux9/JCMazMqYPVvuF5CJHyohQWw==",
   "success": true,
   "projectFilePath": "/home/tee/Documents/websites/larrycerro/larrycerro.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "/home/tee/.nuget/packages/microsoft.jsinterop.webassembly/5.0.3/microsoft.jsinterop.webassembly.5.0.3.nupkg.sha512",
     "/home/tee/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/home/tee/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
-    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.3/microsoft.netcore.app.runtime.browser-wasm.5.0.3.nupkg.sha512"
+    "/home/tee/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.4/microsoft.netcore.app.runtime.browser-wasm.5.0.4.nupkg.sha512"
   ],
   "logs": []
 }

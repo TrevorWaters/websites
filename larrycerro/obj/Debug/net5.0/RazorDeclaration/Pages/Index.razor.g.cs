@@ -97,9 +97,8 @@ using larrycerro.Shared.Components;
         {
         }
         #pragma warning restore 1998
-<<<<<<< HEAD
 #nullable restore
-#line 37 "C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\larrycerro\Pages\Index.razor"
+#line 12 "/home/tee/Documents/websites/larrycerro/Pages/Index.razor"
        
 
 private string messageText = "hidden";
@@ -110,18 +109,10 @@ private void ShowMessage(MouseEventArgs e)
             else
             messageText = "hidden";
     }
-public Dictionary<string, object> InputAttributes { get; set; } =
-        new Dictionary<string, object>()
-        {
-            { "@click.away", "open = false" },
-            { "@click", "open = !open" }
-        };
 
 #line default
 #line hidden
 #nullable disable
-=======
->>>>>>> 6678864950f4c2a3ff19ea55c3d2dcb1a0703fbc
     }
 }
 #pragma warning restore 1591
