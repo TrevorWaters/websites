@@ -41,6 +41,39 @@
         }
       },
       {
+        "HashCode": -88874151,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Pages.AboutLarry",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AboutLarry"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Pages.AboutLarry"
+        }
+      },
+      {
+        "HashCode": 1911340005,
+        "Kind": "Components.Component",
+        "Name": "larrycerro.Pages.AboutLarry",
+        "AssemblyName": "larrycerro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "larrycerro.Pages.AboutLarry"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "larrycerro.Pages.AboutLarry",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1584443139,
         "Kind": "Components.Component",
         "Name": "larrycerro.Pages.AboutOurFirm",
@@ -136,39 +169,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "larrycerro.Pages.Resources",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -88874151,
-        "Kind": "Components.Component",
-        "Name": "larrycerro.Pages.AboutLarry",
-        "AssemblyName": "larrycerro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AboutLarry"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "larrycerro.Pages.AboutLarry"
-        }
-      },
-      {
-        "HashCode": 1911340005,
-        "Kind": "Components.Component",
-        "Name": "larrycerro.Pages.AboutLarry",
-        "AssemblyName": "larrycerro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "larrycerro.Pages.AboutLarry"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "larrycerro.Pages.AboutLarry",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
