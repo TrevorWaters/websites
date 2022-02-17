@@ -1,0 +1,93 @@
+﻿<MudTabs Elevation="1" Rounded="true" PrevIcon="@Icons.Filled.SkipPrevious" NextIcon="@Icons.Filled.SkipNext" @ref="mudTabs">
+    <ChildContent>
+        <CascadingValue Value="this">
+            @foreach (var item in TabsList)
+            {
+                <MudTabPanel Text="@item.PanelName" Icon="@item.IconPath" BadgeData="@item.BadgeData" BadgeColor="@item.BadgeColor" Tag="@(@item.IsDynamic ? "dynamic" : "static")">
+                    <TabShell CardTitle="@item.CardTitle" CardTitleIconPath="@item.IconPath">
+                        <CardContent>
+                            @item.CardContent
+                        </CardContent>
+                    </TabShell>
+                </MudTabPanel>
+            }
+        </CascadingValue>
+
+    </ChildContent>
+    <TabPanelHeader>
+        @if (TabsList.Any() && context.Tag != null && context.Tag.ToString() == "dynamic")
+        {
+            <MudTooltip Text="Any unsaved data on this tab will be lost.">
+                <MudIconButton Class="mr-2 pa-1" Color="Color.Error" Icon="@Icons.Material.Filled.Close" OnClick="(_) => RemoveTab(context.Text)" />
+            </MudTooltip>
+        }
+    </TabPanelHeader>
+</MudTabs>
+
+@code {
+    [Parameter]
+    public List<TabView> TabsList { get; set; }
+
+    public MudTabs mudTabs;
+
+    private bool _updateTheTabIndex = false;
+
+    public void RemoveTab(string panelName)
+    {
+        var tab = TabsList.FirstOrDefault(x => x.PanelName == panelName);
+        if (tab != null)
+        {
+            TabsList.Remove(tab);
+        }
+    }
+
+    /// <summary>
+    /// Only add if the PanelName doesn't exist. DynamicTabs.OnAfterRender must be set to the component's OnAfterRender method in order for this to work properly.
+    /// </summary>
+    /// <param name="TabView"></param>
+    /// <param name="position">position in the list</param>
+    public void AddUniqueTab(TabView TabView, int position)
+    {
+        if (!TabsList.Any(x => x.PanelName == TabView.PanelName))
+        {
+            //the tab becomes available after it is rendered. Hence, we can't set the TabIndex here
+            TabsList.Insert(position, TabView);
+            _updateTheTabIndex = true;
+        }
+    }
+
+    /// <summary>
+    /// Add a new tab even if it already exists. DynamicTabs.OnAfterRender must be set to the component's OnAfterRender method in order for this to work properly.
+    /// </summary>
+    /// <param name="TabView"></param>
+    /// <param name="position">position in the list</param>
+    public void AddTab(TabView TabView, int position)
+    {
+        //the tab becomes available after it is rendered. Hence, we can't set the TabIndex here
+        TabsList.Insert(position, TabView);
+        _updateTheTabIndex = true;
+    }
+    /// <summary>
+    /// DynamicTabs.OnAfterRender must be set to the component's OnAfterRender method in order for this to work properly.
+    /// </summary>
+    /// <param name="TabView"></param>
+    public void AddTabToListStart(TabView TabView)
+    {
+        //the tab becomes available after it is rendered. Hence, we can't set the TabIndex here
+        TabsList.Insert(0, TabView);
+        _updateTheTabIndex = true;
+        StateHasChanged();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (_updateTheTabIndex)
+        {
+            mudTabs.ActivatePanel(0);
+            StateHasChanged();
+            _updateTheTabIndex = false;
+        }
+    }
+
+
+        }

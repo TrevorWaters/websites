@@ -1,0 +1,21 @@
+﻿
+
+
+/*02/15/2022 TW: I cannot get these classes to work from this class file, maybe because the components are rendered dynamically?*/
+/*.sticky-header {
+    position: -webkit-sticky;*/ /* Safari */
+    /*position: sticky;
+    height: 25px;
+    top: 55px;
+    width: 100%;
+    z-index: 500;
+}
+
+.sticky-header-2 {
+    position: -webkit-sticky;*/ /* Safari */
+    /*position: sticky;
+    height: 25px;
+    top: 80px;
+    width: 100%;
+    z-index: 500;
+}*/

@@ -1,0 +1,32 @@
+﻿
+    @if (!string.IsNullOrEmpty(CardTitle))
+{
+    <MudCard Class="mt-1">
+        <MudCardContent>
+            <MudText Typo="Typo.h5" Color="Color.Primary" Class="mb-0"><MudIcon Icon="@CardTitleIconPath" Size="Size.Large" Style="vertical-align:sub" />@CardTitle</MudText>
+        </MudCardContent>
+    </MudCard>
+
+}
+<MudGrid>
+    <MudItem xs="12" Class="mt-1">
+        @CardContent
+    </MudItem>
+</MudGrid>
+
+
+
+@code {
+
+    [Parameter]
+    public string CardTitleIconPath { get; set; }
+
+    [Parameter]
+    public string CardTitle { get; set; }
+
+
+    [Parameter]
+    [EditorRequired]
+    public RenderFragment CardContent { get; set; }
+
+}

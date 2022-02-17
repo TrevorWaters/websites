@@ -1,0 +1,37 @@
+﻿<MudCard Class="my-1 py-1" Style=@($"background: {@_backgroundColorHex}; ")>
+    <MudCardContent>
+        <MudGrid>
+            @if (LabelTextItems != null)
+            {
+                @foreach (var item in LabelTextItems)
+                {
+                    <MudItem xs="6" md="4" Class="py-1">
+                        <p class="@_textColorClass"><b>@item.Label</b>: <span class="@item.TextClass">@item.Text</span></p>
+                    </MudItem>
+                }
+            }
+            @if (CustomContent != null) {
+                @CustomContent
+            }
+        </MudGrid>
+    </MudCardContent>
+</MudCard>
+@code {
+    /// <summary>
+    /// The name of the label, the name of the Text value, and the name of the special class applied to that item. Css classes should be added to parent component with the '::deep' attribute applied: https://bit.ly/3Jae1oR
+    /// </summary>
+    [Parameter] public List<(string Label, string Text, string TextClass)> LabelTextItems { get; set; }
+    [Parameter] public RenderFragment? CustomContent { get; set; }
+    [Parameter] public string BackgroundColorHex { get; set; }
+    [Parameter] public string TextColorClass { get; set; }
+
+    private string _backgroundColorHex;
+    private string _textColorClass;
+
+    protected override void OnParametersSet()
+    {
+        _backgroundColorHex = BackgroundColorHex ?? "#28577e";
+        _textColorClass = TextColorClass ?? "text-white";
+        base.OnParametersSet();
+    }
+}

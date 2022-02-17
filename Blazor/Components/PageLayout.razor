@@ -1,0 +1,113 @@
+﻿@using Sections
+
+@if (_loading == true)
+{
+    <LoadingComponent></LoadingComponent>
+}
+
+
+@if (_loading == false)
+{
+    <MudGrid>
+        @if (_menuButtonsExist || _pageTitleExists)
+        {
+            <MudItem xs="12" Class="@($"{_stickyTitleBarClasses}")">
+                <MudCard Class="py-2">
+                    <MudCardContent>
+                        <MudGrid Justify="Justify.SpaceBetween">
+                            @if (_pageTitleExists)
+                            {
+                                <MudText Typo="Typo.h5" Color="Color.Primary">
+                                    <MudIcon Icon="@PageTitleIcon" Size="Size.Large" Style="vertical-align:sub" />
+                                    @PageTitle
+                                </MudText>
+                            }
+                            else
+                            {
+                            <MudSpacer/>
+                            }
+                            @if (_menuButtonsExist)
+                            {
+                                <MudItem xs="12" md="4" Class="ml-2">
+                                    <MudGrid Justify="Justify.FlexEnd">
+                                        @MenuButtons
+                                    </MudGrid>
+                                </MudItem>
+                            }
+                            else
+                            {
+                                <MudSpacer/>
+                            }
+                        </MudGrid>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        }
+
+        @if (ShowHeader)
+        {
+            <MudItem sm="12" Class="@($"my-1 {@_stickyHeaderClasses}")" >
+                @HeaderContent
+            </MudItem>
+        }
+
+        <MudItem xs="12">
+            @MainContent
+        </MudItem>
+    </MudGrid>
+}
+
+
+
+@code {
+    /// <summary>
+    /// Leave null to skip a page title.
+    /// </summary>
+    [Parameter]
+    public string PageTitle { get; set; }
+    [Parameter]
+    public string PageTitleIcon { get; set; }
+    [Parameter]
+    public RenderFragment? MainContent { get; set; }
+    [Parameter]
+    public RenderFragment? MenuButtons { get; set; }
+    /// <summary>
+    /// First content at the top of the page under the menu buttons and title.
+    /// </summary>
+    [Parameter]
+    public RenderFragment? HeaderContent { get; set; }
+    [Parameter]
+    public bool Loading { get; set; }
+    [Parameter]
+    public bool StickyTitleBar { get; set; } = true;
+    [Parameter]
+    public bool StickyHeader { get; set; }
+    [Parameter]
+    public bool PageInPage { get; set; } = false;
+    [Parameter]
+    public bool ShowHeader { get; set; } = true;
+
+    private bool _loading;
+    private bool _pageTitleExists;
+    private bool _menuButtonsExist;
+    private bool _showHeaderContent;
+    private string _stickyTitleBarClasses;
+    private string _stickyHeaderClasses;
+
+    protected override void OnParametersSet()
+    {
+
+        _loading = Loading;
+        _pageTitleExists = !string.IsNullOrEmpty(PageTitle);
+        _menuButtonsExist = MenuButtons is not null;
+        _stickyTitleBarClasses = PageInPage ? (StickyTitleBar ? "page-layout-sticky titlebar second-row" : "my-1") : (StickyTitleBar ? "page-layout-sticky titlebar" : "my-1");
+        _stickyHeaderClasses = PageInPage ? (StickyHeader ? "page-layout-sticky headercontent second-row" : string.Empty) : (StickyHeader ? "page-layout-sticky headercontent" : string.Empty);
+        _showHeaderContent = HeaderContent is not null;
+        StateHasChanged();
+        base.OnParametersSet();
+
+
+
+
+    }
+}
