@@ -1,0 +1,49 @@
+@inherits InputBase<string>
+
+    @if (!string.IsNullOrWhiteSpace(Label))
+    {
+        <label class="block text-sm font-medium text-gray-700" for="@Id">@Label</label>
+    }
+    <div class="mt-1">
+    <input 
+        type="text" 
+        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" 
+        id="@Id"
+        auto-complete="@AutoComplete"
+        @bind="@InputValue"
+    />
+    </div>
+    @*<div class="text-red-700">
+        <ValidationMessage For="@ValidationFor" />
+    </div>*@
+
+
+@code {
+
+    [Parameter] public string Id { get; set; }
+    [Parameter] public string Label { get; set; }
+    [Parameter] public bool IsMoney { get; set; } = false;
+    [Parameter] public string AutoComplete { get; set; }
+    [Parameter] public Expression<Func<string>> ValidationFor { get; set; }
+    private string InputValue
+    {
+        get => CurrentValue;
+
+        set
+        {
+            if (IsMoney)
+                CurrentValue = Decimal.TryParse(value, out var result) ? string.Format("{0:C}", result) : null;
+            else
+                CurrentValue = value;
+        }
+    }
+
+
+    protected override bool TryParseValueFromString(string value, out string result, out string validationErrorMessage)
+    {
+        result = value;
+        validationErrorMessage = null;
+        return true;
+    }
+
+}

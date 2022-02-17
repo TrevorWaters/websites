@@ -1,0 +1,6 @@
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.csproj.AssemblyReference.cache
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.AssemblyInfoInputs.cache
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.AssemblyInfo.cs
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.csproj.CoreCompileInputs.cache
+C:\Users\taw11\source\repos\TaxCertPortal\TaxCertPortal\obj\Debug\net6.0\TaxCertPortal.MvcApplicationPartsAssemblyInfo.cache

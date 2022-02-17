@@ -1,0 +1,26 @@
+{
+  "name": "taxcertportal",
+  "version": "1.0.0",
+  "description": "User Portal demo for Data Integration team",
+  "main": "index.html",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "alpinejs": "3.2.1",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4",
+    "webpack": "5.42.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "webpack-cli": "4.7.2"
+  },
+  "scripts": {
+    "build-css-dev": "tailwindcss build ./wwwroot/css/tailwind.css -o ./wwwroot/css/tailwind.min.css -c tailwind.config.js",
+    "build-css-prod": "cross-env NODE_ENV=production tailwindcss build ./wwwroot/css/tailwind.css -o ./wwwroot/css/tailwind.min.css -c tailwind.config.js",
+    "build-js": "webpack ./wwwroot/js/index.js --output-path ./wwwroot/js --output-filename index.bundle.js"
+  },
+  "author": "Trevor Waters",
+  "license": "ISC"
+}

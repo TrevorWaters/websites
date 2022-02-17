@@ -1,0 +1,12 @@
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\bin\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.deps.json
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\bin\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.dll
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\bin\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.pdb
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.csproj.AssemblyReference.cache
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.AssemblyInfoInputs.cache
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.AssemblyInfo.cs
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.csproj.CoreCompileInputs.cache
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.dll
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\refint\TaxCertPortal.Shared.dll
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\TaxCertPortal.Shared.pdb
+E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Shared\obj\Release\net5.0\ubuntu.20.04-x64\ref\TaxCertPortal.Shared.dll

@@ -1,0 +1,162 @@
+@page "/AddCertificate"
+@page "/EditCertificate/{CertID:int}"
+@inject NavigationManager NavigationManager
+@inject IToastService toastService
+@inject TaxCertificates.TaxCertificatesClient TaxCertClient
+
+@if (CertId != 0)
+{
+    <Title value="Edit Certificate"></Title>
+}
+else
+{
+    <Title value="Add Certificate"></Title>
+
+}
+<EditForm Model="@CertVM" OnValidSubmit="@HandleValidSubmit" class="space-y-8 divide-y divide-gray-200">
+    <DataAnnotationsValidator />
+    <div class="space-y-8 divide-y divide-gray-200">
+        <div class="pt-8">
+            <div>
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Certificate Information
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">
+                    Please input the information from the Certificate Purchase Receipt.
+                </p>
+            </div>
+            <input type="hidden" @bind-value="CertVM.TaxCertID">
+            <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Parcel Number" Id="ParcelNumber" @bind-Value="CertVM.ParcelNumber" ValidationFor="@(() => CertVM.ParcelNumber)" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Certificate ID" Id="CertID" @bind-Value="CertVM.CertID" ValidationFor="@(() => CertVM.CertID)" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Unpaid Year" Id="UnpaidYear" @bind-Value="CertVM.UnpaidYear" ValidationFor="@(() => CertVM.UnpaidYear)" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Certificate Cost" Id="CertCost" @bind-Value="CertVM.CertCost" ValidationFor="@(() => CertVM.CertCost)" IsMoney="true" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Interest Cost" Id="CertInterestCost" @bind-Value="CertVM.CertInterestCost" ValidationFor="@(() => CertVM.CertInterestCost)" IsMoney="true"/>
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Purchase Fee" Id="PurchaseFee" @bind-Value="CertVM.PurchaseFee" ValidationFor="@(() => CertVM.PurchaseFee)" IsMoney="true"/>
+                </div>
+
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Bill Number" Id="BillNumber" @bind-Value="CertVM.BillNumber" ValidationFor="@(() => CertVM.BillNumber)" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Date Bought" Id="DateBought" @bind-Value="CertVM.DateBought" ValidationFor="@(() => CertVM.DateBought)" />
+                </div>
+                <div class="sm:col-span-3">
+                    <CustomInputText Label="Acreage" Id="Acreage" @bind-Value="CertVM.Acreage" ValidationFor="@(() => CertVM.Acreage)" />
+                </div>
+                <div class="sm:col-span-6">
+                    <CustomInputTextArea Label="Comments" Id="Comments" @bind-Value="CertVM.Comments" ValidationFor="@(() => CertVM.Comments)" AdditionalInfo="Please include any additional information here."/>
+                </div>
+            </div>
+        </div>
+
+        @*    <div class="pt-8">
+        <div>
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+        User Role
+        </h3>
+        <p class="mt-1 text-sm text-gray-500">
+        Please select a role within the application.
+        </p>
+        </div>
+        <div class="mt-6">
+        <fieldset>
+        <legend class="sr-only">
+        Select User Role
+        </legend>
+        <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+        <!-- ... -->
+        </svg>
+        <div x-data="{ active : 0 }" class="bg-white rounded-md -space-y-px w-1/2">
+        <InputRadioGroup Name="userrole" @bind-Value="CertVM.RoleId">
+        @foreach (var role in Roles)
+        {
+        <div :class="{'bg-indigo-50 border-indigo-200 z-10': active == @(role.RoleId), 'border-gray-200': active != @(role.RoleId) }" class="relative border rounded-tl-md rounded-tr-md p-4 flex">
+        <div class="flex items-center h-5" x-on:click="active = @(role.RoleId)">
+        <InputRadio Name="userrole" Value="role.RoleId" class="focus:ring-indigo-500 h-4 w-4 mt-0.5 text-indigo-600 cursor-pointer border-gray-300" />
+        </div>
+        <label for="settings-option-0" class="ml-3 flex flex-col">
+        <span class="block text-sm font-medium" :class="{ 'text-indigo-900': active == @(role.RoleId), 'text-gray-900': active != @(role.RoleId) }">
+        @role.RoleName
+        </span>
+        <span class="block text-sm" x-bind:class="{'text-indigo-700': active == @(role.RoleId), 'text-gray-500': active != @(role.RoleId) }">
+        @role.Description
+        </span>
+        </label>
+        </div>
+        }
+        </InputRadioGroup>
+        </div>
+        </fieldset>
+        </div>*@
+    </div>
+    <div class="pt-5">
+        <p class="mr-2 text-sm text-gray-500">@response</p>
+        <div class="flex justify-end">
+            <button type="button" class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Cancel
+            </button>
+            <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Save
+            </button>
+        </div>
+    </div>
+</EditForm>
+
+
+@code {
+    private TaxCertificateViewModel CertVM = new TaxCertificateViewModel();
+    string response;
+
+    [Parameter]
+    public int CertId { get; set; }
+    @*
+        protected override async Task OnInitializedAsync()
+        {
+        //InitDependencies();
+        //Roles = await GetRolesAsync(Roles);
+
+        //if (CertId !=0)
+        //{
+        //    CertVM = await GetCertificateAsync(CertId);
+
+        //}
+        }
+    *@
+
+private async Task HandleValidSubmit()
+{
+    if (CertId != 0)
+    {
+        //await UpdateUserAsync(CertVM);
+    }
+    else
+    {
+        var reply = await TaxCertClient.AddCertificateAsync(CertVM);
+        response = reply.Reply;
+        if (response.Contains("Success"))
+        {
+            toastService.ShowSuccess(response);
+            CertVM = new TaxCertificateViewModel();
+        }
+        if (response.Contains("Error"))
+        {
+            toastService.ShowError(response);
+        }
+
+    }
+
+
+}
+}

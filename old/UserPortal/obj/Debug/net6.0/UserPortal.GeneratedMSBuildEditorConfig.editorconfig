@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UserPortal
+build_property.RootNamespace = UserPortal
+build_property.ProjectDir = C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\UserPortal\
+build_property.RazorLangVersion = 5.0
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\taw11\Desktop\Hobbies\Code\Personalwebsite\UserPortal
+build_property._RazorSourceGeneratorDebug = 
+build_property._RazorSourceGeneratorHeapDumps = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Pages/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/Components/CustomInputRadio.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tSW5wdXRSYWRpby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/Components/CustomInputText.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tSW5wdXRUZXh0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/Components/CustomInputTextArea.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tSW5wdXRUZXh0QXJlYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/Components/ModalWindow.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTW9kYWxXaW5kb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/Components/Toast.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVG9hc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/taw11/Desktop/Hobbies/Code/Personalwebsite/UserPortal/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope =

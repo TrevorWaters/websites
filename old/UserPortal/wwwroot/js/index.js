@@ -1,0 +1,2 @@
+import { alpinejs } from 'alpinejs';
+

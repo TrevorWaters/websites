@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TaxCertPortal.Shared": {
+      "commandName": "Project",
+      "workingDirectory": "E:\\taw11\\Documents\\source\\repos\\TaxCertPortal\\TaxCertPortal\\Shared"
+    }
+  }
+}

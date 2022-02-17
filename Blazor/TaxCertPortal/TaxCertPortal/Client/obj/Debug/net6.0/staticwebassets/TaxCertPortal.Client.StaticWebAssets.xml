@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Client\bin\Debug\net6.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="E:\taw11\Documents\source\repos\TaxCertPortal\TaxCertPortal\Client\obj\Debug\net6.0\scopedcss\bundle\" />
+</StaticWebAssets>

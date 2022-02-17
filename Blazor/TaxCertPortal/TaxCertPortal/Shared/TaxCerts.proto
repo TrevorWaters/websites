@@ -1,0 +1,26 @@
+﻿syntax = "proto3"; 
+// replace namespace with your own
+option csharp_namespace = "TaxCertPortal.Shared"; 
+package TaxCertificate;
+
+service TaxCertificates { 
+	rpc AddCertificate(TaxCertificateViewModel) returns (CertificateReply); 
+} 
+
+message CertificateReply { 
+	string reply = 1;
+} 
+
+message TaxCertificateViewModel { 
+	optional int32 TaxCertID = 1;
+	string ParcelNumber = 2;
+	string CertID = 3;
+	string UnpaidYear = 4;
+	string CertCost = 5;
+	string CertInterestCost = 6;
+	string PurchaseFee = 7;
+	string BillNumber = 8;
+	string DateBought = 9; 
+	string Comments = 10;
+	string Acreage = 11;
+}

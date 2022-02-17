@@ -1,0 +1,2 @@
+obj\Debug\net5.0/TaxCerts.cs \
+obj\Debug\net5.0/TaxCertsGrpc.cs: TaxCerts.proto

@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Server\\kristinsite.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\kristinsite.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\kristinsite.Client.csproj",
+        "projectName": "kristinsite.Client",
+        "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\kristinsite.Client.csproj",
+        "packagesPath": "C:\\Users\\taw11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\taw11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj": {
+                "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.4, 5.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Server\\kristinsite.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Server\\kristinsite.Server.csproj",
+        "projectName": "kristinsite.Server",
+        "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Server\\kristinsite.Server.csproj",
+        "packagesPath": "C:\\Users\\taw11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\taw11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\kristinsite.Client.csproj": {
+                "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Client\\kristinsite.Client.csproj"
+              },
+              "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj": {
+                "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj",
+        "projectName": "kristinsite.Shared",
+        "projectPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\kristinsite.Shared.csproj",
+        "packagesPath": "C:\\Users\\taw11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taw11\\Desktop\\Hobbies\\Code\\Personalwebsite\\kristinsite\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\taw11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+
+@using System.Linq.Expressions
+@using System.Globalization;
+
+@inherits InputBase<string>
+
+<div class="flex justify-start">
+    @if (!string.IsNullOrWhiteSpace(Label))
+    {
+        <label class="text-sm font-medium text-gray-700" for="@Id">@Label</label>
+    }
+    @if ((!string.IsNullOrWhiteSpace(AdditionalInfo)))
+    {
+        <p class="ml-5 text-xs text-gray-500 self-center">@AdditionalInfo</p>
+    }
+</div>
+
+<div class="mt-1">
+    <textarea rows="3"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              id="@Id"
+              @bind="@CurrentValue">
+        </textarea>
+</div>
+@*<div class="text-red-700 text-sm block">
+        <ValidationMessage For="@ValidationFor" />
+    </div>*@
+
+
+@code {
+
+    [Parameter] public string Id { get; set; }
+    [Parameter] public string Label { get; set; }
+    [Parameter] public string AdditionalInfo { get; set; }
+    [Parameter] public Expression<Func<string>> ValidationFor { get; set; }
+
+    protected override bool TryParseValueFromString(string value, out string result, out string validationErrorMessage)
+    {
+        result = value;
+        validationErrorMessage = null;
+        return true;
+    }
+}
