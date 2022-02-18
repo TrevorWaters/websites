@@ -1,17 +1,15 @@
 ﻿@using Microsoft.JSInterop
 @inject IJSRuntime JSRuntime
 
-<MudTabs PrevIcon="@Icons.Filled.SkipPrevious" NextIcon="@Icons.Filled.SkipNext" Elevation="0" DisableSliderAnimation="true" @bind-ActivePanelIndex="_activePanelIndex">
+<MudTabs PrevIcon="@Icons.Filled.SkipPrevious" NextIcon="@Icons.Filled.SkipNext" Elevation="0" DisableSliderAnimation="true" @bind-ActivePanelIndex="_activeTabIndex">
 
     <ChildContent>
 
         <MudProgressLinear Color="Color.Primary" Value="_value" Class="mb-1" />
         <CascadingValue Value="this">
-            @foreach (var item in TabsList)
+            @foreach (var item in  _tabsList)
             {
-                int index = TabsList.IndexOf(item);
-
-                <MudTabPanel Text="@item.PanelName" BadgeData="@item.BadgeData" Icon="@item.IconPath" BadgeColor="@item.BadgeColor" Tag="index" Disabled="!item.IsActive">
+                <MudTabPanel Text="@item.PanelName" BadgeData="@item.BadgeData" Icon="@item.IconPath" BadgeColor="@item.BadgeColor" Disabled="!item.IsEnabled">
 
                     <TabShell CardTitle="@item.CardTitle" CardTitleIconPath="@item.IconPath">
                         <CardContent>
@@ -24,16 +22,16 @@
     </ChildContent>
     <Header>
         <MudButtonGroup Variant="Variant.Outlined" Color="Color.Primary" Class="mr-2 d-flex align-center" DisableElevation="true">
-            @if (_activePanelIndex != 0)
+            @if (_activeTabIndex != 0)
             {
                 <MudTooltip Text="Go to previous step" aria-live="polite">
-                    <MudButton StartIcon="@Icons.Material.Filled.ChevronLeft" OnClick="@( async () => await SwitchToTab(_activePanelIndex-1))">Prev</MudButton>
+                    <MudButton StartIcon="@Icons.Material.Filled.ChevronLeft" OnClick="@( async () => await GoToPreviousTab())">Prev</MudButton>
                 </MudTooltip>
             }
             @if (_nextButtonEnabled)
             {
                 <MudTooltip Text="Go to next step" aria-live="polite">
-                    <MudButton EndIcon="@Icons.Material.Filled.ChevronRight" OnClick="@( async () => await SwitchToTab(_activePanelIndex+1) )">Next</MudButton>
+                    <MudButton EndIcon="@Icons.Material.Filled.ChevronRight" OnClick="@( async () => await GoToNextTab())">Next</MudButton>
                 </MudTooltip>
             }
 
@@ -42,93 +40,116 @@
 </MudTabs>
 <MudScrollToTop TopOffset="50" Style="z-index:2001;">
     <ChildContent>
-        @if (_activePanelIndex != 0)
+        @if (_activeTabIndex != 0)
         {
             <MudTooltip Text="Go to previous step" aria-live="polite">
-                <MudButton Style="z-index:2001;" Color="Color.Primary" StartIcon="@Icons.Material.Filled.ChevronLeft" OnClick="@( async () => await SwitchToTab(_activePanelIndex-1))">Previous</MudButton>
+                <MudButton Style="z-index:2001;" Color="Color.Primary" StartIcon="@Icons.Material.Filled.ChevronLeft" OnClick="@( async () => await GoToPreviousTab())">Previous</MudButton>
             </MudTooltip>
         }
         @if (_nextButtonEnabled)
         {
             <MudTooltip Text="Go to next step">
-                <MudButton Style="z-index:2001;" Color="Color.Primary" EndIcon="@Icons.Material.Filled.ChevronRight" OnClick="@( async () => await SwitchToTab(_activePanelIndex+1) )">Next</MudButton>
+                <MudButton Style="z-index:2001;" Color="Color.Primary" EndIcon="@Icons.Material.Filled.ChevronRight" OnClick="@( async () => await GoToNextTab())">Next</MudButton>
             </MudTooltip>
         }
     </ChildContent>
 </MudScrollToTop>
 @code {
+    /// <summary>
+    /// Set the active panel from outside the component using @ref
+    /// </summary>
     [Parameter]
-    public List<TabView> TabsList { get; set; }
+    public List<TabView>  TabsList { get; set; }
 
-    [Parameter]
-    public int ActiveStep { get; set; }
-
+    private List<TabView> _tabsList = new();
     private int _value;
     private int _progressPercentChange;
-    private int _activePanelIndex;
+    private int _activeTabIndex;
     private bool _nextButtonEnabled;
     private bool _previousButtonEnabled;
-    private int? _nextIndex;
+    private int? _newActiveTabIndex;
     private IJSObjectReference? module;
 
     protected override void OnParametersSet()
     {
-        _progressPercentChange = 100 / (TabsList.Count + 1);
-        _activePanelIndex = ActiveStep;
-
-        DisableOtherTabs(_activePanelIndex);
         base.OnParametersSet();
+        _tabsList = TabsList;
+        _progressPercentChange = 100 / (_tabsList.Count + 1);
     }
+
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-        {
             module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/DCHP.STARS.ComponentsLibrary/Tabs/Wizard.razor.js");
+
+        if (_newActiveTabIndex.HasValue)
+        {//Per MudBlazor: the tab becomes available after it is rendered. Hence, have to set the index after render
+            _activeTabIndex = _newActiveTabIndex.Value;
+        //Show/hiding next buttons also goes here, since the user can just click on the tabs
+            HandleNavigationButtonEnabling(_activeTabIndex);
+            _newActiveTabIndex = null;
+            StateHasChanged();
         }
-
-        await base.OnAfterRenderAsync(firstRender);
-    }
-
-    //private void PageChanged(int selectedIndex)
-    //{
-    //    if (TabsList.ElementAtOrDefault(selectedIndex).IsActive == false)
-
-    //}
-
-    public async ValueTask SwitchToTab(int panelIndex)
-    {
-        //EnableTab(panelIndex);
-        HandleNavigationButtonEnabling();
-        _nextIndex = panelIndex;
+        //Loading the Progress bar only here.
         CalculateProgressBar();
-        StateHasChanged();
-        if (module is not null)
-            await module.InvokeVoidAsync("scrollToTopInvoke");
     }
+
+    /// <summary>
+    /// Switches to the tab if the tab is enabled. Also scrolls to the top of the page.
+    /// </summary>
+    /// <param name="tabIndex"></param>
+    /// <returns></returns>
+    public async Task SwitchToTab(int tabIndex)
+    {
+
+        if(_tabsList[tabIndex].IsEnabled)
+        {
+            _newActiveTabIndex = tabIndex;
+            await ScrollToTopAsync();
+        }
+    }
+
+    public async Task GoToPreviousTab()
+    {
+        if (PreviousEnabledTabExists(out int enabledIndex))
+        {
+            _newActiveTabIndex = enabledIndex;
+            await ScrollToTopAsync();
+        }
+    }
+
+    public async Task GoToNextTab()
+    {
+        if (NextEnabledTabExists(out int enabledIndex))
+        {
+            _newActiveTabIndex = enabledIndex;
+            await ScrollToTopAsync();
+        }
+    }
+
 
     public void EnableTab(string panelName)
     {
-        TabsList.FirstOrDefault(x => x.PanelName == panelName).IsActive = true;
+        _tabsList.FirstOrDefault(x => x.PanelName == panelName).IsEnabled = true;
     }
 
-    public void EnableTab(int panelIndex)
+    public void EnableTab(int tabIndex)
     {
-        TabsList[panelIndex].IsActive = true;
-
+        _tabsList[tabIndex].IsEnabled = true;
     }
 
-    public void DisableTab(int panelIndex)
+    public void DisableTab(int tabIndex)
     {
-        TabsList.ElementAtOrDefault(panelIndex).IsActive = false;
+        _tabsList.ElementAtOrDefault(tabIndex).IsEnabled = false;
         StateHasChanged();
     }
 
-    public void DisableTabs(int[] panelIndices)
+    public void DisableTabs(int[] tabIndices)
     {
-        foreach (int index in panelIndices)
+        foreach (int index in tabIndices)
         {
-            TabsList[index].IsActive = false;
+            _tabsList[index].IsEnabled = false;
         };
         StateHasChanged();
     }
@@ -136,40 +157,62 @@
     public void DisableOtherTabs(int activeIndex)
     {
 
-        for (int i = 0; i < TabsList.Count; i++)
+        for (int i = 0; i <  _tabsList.Count; i++)
         {
             if (i != activeIndex)
-                TabsList[i].IsActive = false;
+                _tabsList[i].IsEnabled = false;
         };
         StateHasChanged();
     }
 
     private void CalculateProgressBar()
     {
-        _value = (_activePanelIndex + 1) * _progressPercentChange;
-        StateHasChanged();
+        _value = (_activeTabIndex + 1) * _progressPercentChange;
     }
 
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (_nextIndex.HasValue)
-        {
-            _activePanelIndex = _nextIndex.Value;
 
-            _nextIndex = null;
-        }
-        CalculateProgressBar();
+    private void HandleNavigationButtonEnabling(int activeTabIndex)
+    {
+
+        _nextButtonEnabled = _tabsList.Any(x => _tabsList.IndexOf(x) > activeTabIndex && x.IsEnabled);
+        _previousButtonEnabled = activeTabIndex - 1 > 0;
     }
 
-    private void HandleNavigationButtonEnabling()
+    private bool PreviousEnabledTabExists(out int enabledIndex)
     {
-        if (_activePanelIndex != (TabsList.Count - 1) && TabsList[_activePanelIndex + 1].IsActive is true)
+        for (int i = (_activeTabIndex - 1); i >= 0; i--)
         {
-            _nextButtonEnabled = true;
+            if (_tabsList[i].IsEnabled)
+            {
+                _previousButtonEnabled = true;
+                enabledIndex = i;
+                return true;
+            }
         }
-        if (_activePanelIndex is not 0 && TabsList[_activePanelIndex - 1].IsActive is true)
+        _previousButtonEnabled = false;
+        enabledIndex = 0;
+        return false;
+    }
+
+    private bool NextEnabledTabExists(out int enabledIndex)
+    {
+        for (int i = (_activeTabIndex + 1); i < _tabsList.Count; i++)
         {
-            _previousButtonEnabled = true;
+            if (_tabsList[i].IsEnabled)
+            {
+                _nextButtonEnabled = true;
+                enabledIndex = i;
+                return true;
+            }
         }
+        _nextButtonEnabled = false;
+        enabledIndex = 0;
+        return false;
+    }
+
+        private async Task ScrollToTopAsync()
+    {
+                    if (module is not null)
+                await module.InvokeVoidAsync("scrollToTopInvoke");
     }
         }
